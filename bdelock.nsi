@@ -18,7 +18,7 @@
 
 # Installer configuration
 Name "BDELock v${VERSION}"
-InstallDir "$PROGRAMFILES32\${PROJECT}"
+InstallDir "$PROGRAMFILES64\${PROJECT}"
 ManifestSupportedOS Win10
 RequestExecutionLevel admin
 InstallColors /windows
@@ -60,7 +60,7 @@ Section
   ${If} ${RunningX64}
   SetRegView 64
   ${EndIf}
-  WriteRegExpandStr  HKCR "${REG_DRIVECTXT}\command" ""   "%SystemRoot%\System32\wscript.exe $\"%ProgramFiles(x86)%\${PROJECT}\bdelock.vbs$\" %1"
+  WriteRegExpandStr  HKCR "${REG_DRIVECTXT}\command" ""   "%SystemRoot%\System32\wscript.exe $\"%ProgramFiles%\${PROJECT}\bdelock.vbs$\" %1"
   # registry uninstaller entries
   WriteRegStr   HKLM "${REG_UNINSTALL}" "DisplayName"     "${PROJECT} ${VERSION}"
   WriteRegStr   HKLM "${REG_UNINSTALL}" "UninstallString" "$INSTDIR\${UNINSTALLER}"

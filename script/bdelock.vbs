@@ -8,6 +8,7 @@ For n = 0 To Last
  Drive = Drive & " " & Wscript.Arguments.Item(n)
 Next
 Drive = Replace(Drive,":\",":")
-CreateObject("Shell.Application").ShellExecute "manage-bde.exe", "-lock -forcedismount " & Drive, "", "runas", 0
-
-'Wscript.Echo "Locked " & Drive
+set Obj = CreateObject("Shell.Application")
+RetVal = Obj.ShellExecute("manage-bde.exe", "-lock -forcedismount " & Drive, "", "runas", 0)
+' Wscript.Echo "Locked " & Drive
+Wscript.Quit RetVal

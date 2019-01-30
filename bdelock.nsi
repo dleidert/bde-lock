@@ -19,10 +19,20 @@
 # Installer configuration
 Name "BDELock v${VERSION}"
 InstallDir "$PROGRAMFILES32\${PROJECT}"
+ManifestSupportedOS Win10
 RequestExecutionLevel admin
+InstallColors /windows
+XPStyle on
 SetCompressor /SOLID lzma
+LicenseData public-domain.txt
+LicenseText "License information" "I understand"
 ShowInstDetails   hide
 ShowUninstDetails hide
+
+Page license
+Page instfiles
+UninstPage uninstConfirm
+UninstPage instfiles
 
 # Installer version information
 VIProductVersion "${VERSION}.${REVISION}"

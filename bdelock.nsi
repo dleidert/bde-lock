@@ -25,24 +25,23 @@ InstallColors /windows
 XPStyle on
 SetCompressor /SOLID lzma
 LicenseData public-domain.txt
-LicenseText "License information" "I understand"
 ShowInstDetails   hide
 ShowUninstDetails hide
-
-Page license
-Page instfiles
-UninstPage uninstConfirm
-UninstPage instfiles
 
 # Installer version information
 VIProductVersion "${VERSION}.${REVISION}"
 VIAddVersionKey  "ProductName"     "${PROJECT}"
-VIAddVersionKey  "FileVersion"     "${VERSION}"
 VIAddVersionKey  "ProductVersion"  "${VERSION}"
-VIAddVersionKey  "LegalCopyright"  "Public Domain"
-VIAddVersionKey  "FileDescription" "BDE Lock Installer"
+
+!include "locale\languages.nsh"
 
 OutFile "${INSTALLER}"
+
+LicenseText $(LicenseHeaderText) $(LicenseButtonText)
+Page license
+Page instfiles
+UninstPage uninstConfirm
+UninstPage instfiles
 
 # Default section
 Section
@@ -52,7 +51,7 @@ Section
   WriteUninstaller "$INSTDIR\${UNINSTALLER}"
   # registry context menu entries
   # TODO: test for key!
-  WriteRegStr HKCR "${REG_DRIVECTXT}" ""                  "Test BDE Locker"
+  WriteRegStr HKCR "${REG_DRIVECTXT}" ""                  "$(ContextMenuEntry)"
   WriteRegStr HKCR "${REG_DRIVECTXT}" "AppliesTo"         "(System.Volume.BitLockerProtection:=1 OR System.Volume.BitLockerProtection:=3 OR System.Volume.BitLockerProtection:=5) AND NOT C:"
   WriteRegStr HKCR "${REG_DRIVECTXT}" "HasLUAShield"      ""
   WriteRegStr HKCR "${REG_DRIVECTXT}" "MultiSelectModel"  "Single"

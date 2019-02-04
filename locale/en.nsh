@@ -8,3 +8,5 @@ VIAddVersionKey /LANG=${LANG_ENGLISH} "LegalCopyright"  "Public Domain"
 LangString LicenseButtonText ${LANG_ENGLISH} "I understand"
 LangString LicenseHeaderText ${LANG_ENGLISH} "License information"
 LangString ContextMenuEntry  ${LANG_ENGLISH} "Bitlocker Lock drive"
+
+LangString UserLanguageId    ${LANG_ENGLISH} ${LANG_ENGLISH}

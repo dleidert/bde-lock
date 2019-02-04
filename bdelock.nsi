@@ -9,7 +9,7 @@
 !define INSTALLER   "${PROJECT}-setup.exe"
 !define UNINSTALLER "uninstall.exe"
 
-!define CTXT_ENTRY    "lock-bde2"
+!define CTXT_ENTRY    "lock-bde"
 
 !define REG_DRIVECTXT "Drive\shell\${CTXT_ENTRY}"
 !define REG_UNINSTALL "Software\Microsoft\Windows\CurrentVersion\Uninstall\bdelock"

@@ -6,7 +6,7 @@
 !define VERSION     "0.0.1"
 !define REVISION    "0"
 !define WEBPAGE     "https://github.com/dleidert/bde-lock"
-!define INSTALLER   "${PROJECT}-setup.exe"
+!define INSTALLER   "${PROJECT}-${VERSION}-setup.exe"
 !define UNINSTALLER "uninstall.exe"
 
 !define CTXT_ENTRY    "lock-bde"

@@ -45,7 +45,7 @@ UninstPage instfiles
 
 # Default section
 Section
-  SetOverwrite on
+  SetOverwrite ifnewer
   SetOutPath "$INSTDIR"
   File "script\bdelock.vbs"
   WriteUninstaller "$INSTDIR\${UNINSTALLER}"

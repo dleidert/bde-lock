@@ -1,5 +1,9 @@
 # Author: Daniel Leidert, 2018
 
+LoadLanguageFile "${NSISDIR}\Contrib\Language files\German.nlf"
+
+LangString Name ${LANG_GERMAN}  "Deutsch"
+
 VIAddVersionKey /LANG=${LANG_GERMAN} "FileVersion"     "${VERSION}"
 VIAddVersionKey /LANG=${LANG_GERMAN} "FileDescription" "BDE Lock Installer"
 VIAddVersionKey /LANG=${LANG_GERMAN} "Comments"        "Installs a context menu entry to lock unlocked Bitlocker-encrypted drives"

@@ -24,7 +24,7 @@ Go to your download folder and execute the [latest installer](https://github.com
 
 ## Uninstallation
 
-Go to the Windows Control Panel > Programs > Uninstall a program. There you will find it as `Bitlocker Drive Locker - Explorer Context Menu Entry` (or its localized string). Select `Uninstall` and all created registry keys and folders will be removed.
+Go to the Windows `Control Panel > Programs > Uninstall a program`. There you will find it as `Bitlocker Drive Locker - Explorer Context Menu Entry` (or its localized string). Select `Uninstall` and all created registry keys and folders will be removed.
 
 ## Source
 

@@ -3,7 +3,7 @@
 
 # Defines
 !define PROJECT     "bdelock"
-!define VERSION     "0.0.1"
+!define VERSION     "0.0.2"
 !define REVISION    "0"
 !define WEBPAGE     "https://github.com/dleidert/bde-lock"
 !define INSTALLER   "${PROJECT}-${VERSION}-setup.exe"

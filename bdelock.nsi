@@ -14,6 +14,7 @@
 
 !define REG_DRIVECTXT "Drive\shell\${CTXT_ENTRY}"
 !define REG_UNINSTALL "Software\Microsoft\Windows\CurrentVersion\Uninstall\bdelock"
+!define REG_BITLOCKER "SOFTWARE\Microsoft\Windows\CurrentVersion\BitLocker"
 
 # Variables
 
@@ -49,6 +50,18 @@ Function .onInit
     MessageBox MB_OK $(MsgWindowsVersion)
     Quit
   ${EndIf}
+  ${If} ${RunningX64}
+  SetRegView 64
+  ${EndIf}
+  ClearErrors
+  ReadRegDWORD $R0 HKLM "${REG_BITLOCKER}" "IsBdeDriverPresent"
+  ${If} ${Errors}
+  ${OrIf} $R0 <> 1
+    MessageBox MB_OKCANCEL $(MsgBitlockerError) IDOK OK IDCANCEL CANCEL
+    CANCEL:
+      Quit
+    OK:
+  ${EndIf} 
 FunctionEnd
 
 # Default section
@@ -64,9 +77,6 @@ Section
   WriteRegStr HKCR "${REG_DRIVECTXT}" "HasLUAShield"      ""
   WriteRegStr HKCR "${REG_DRIVECTXT}" "MultiSelectModel"  "Single"
   # registry context menu command
-  ${If} ${RunningX64}
-  SetRegView 64
-  ${EndIf}
   WriteRegExpandStr  HKCR "${REG_DRIVECTXT}\command" ""   "%SystemRoot%\System32\wscript.exe $\"%ProgramFiles%\${PROJECT}\bdelock.vbs$\" %1"
   # registry uninstaller entries
   WriteRegStr   HKLM "${REG_UNINSTALL}" "DisplayName"     "$(RegUninstallDispNam) (${PROJECT})"

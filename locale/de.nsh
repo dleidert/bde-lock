@@ -13,6 +13,7 @@ VIAddVersionKey /LANG=${LANG_GERMAN} "LegalCopyright"  "Public Domain"
 
 LangString LicenseButtonText   ${LANG_GERMAN} "Ich verstehe"
 LangString LicenseHeaderText   ${LANG_GERMAN} "Lizenzinformation"
+LangString MsgBitlockerError   ${LANG_GERMAN} "Bitlocker-Test ist fehlgeschlagen oder Bitlocker ist nicht installiert. Soll die Installation dennoch fortgeführt werden?"
 LangString MsgWindowsVersion   ${LANG_GERMAN} "Windows Vista oder höher wird benötigt"
 LangString RegContextMenuEntry ${LANG_GERMAN} "Bitlocker Laufwerk sperren"
 LangString RegUninstallDispNam ${LANG_GERMAN} "Bitlocker Drive Locker - Explorer Kontextmenüeintrag"

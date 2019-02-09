@@ -13,6 +13,7 @@ VIAddVersionKey /LANG=${LANG_GERMAN} "LegalCopyright"  "Public Domain"
 
 LangString LicenseButtonText   ${LANG_GERMAN} "Ich verstehe"
 LangString LicenseHeaderText   ${LANG_GERMAN} "Lizenzinformation"
+LangString MsgWindowsVersion   ${LANG_GERMAN} "Windows Vista oder höher wird benötigt"
 LangString RegContextMenuEntry ${LANG_GERMAN} "Bitlocker Laufwerk sperren"
 LangString RegUninstallDispNam ${LANG_GERMAN} "Bitlocker Drive Locker - Explorer Kontextmenüeintrag"
 LangString RegUninstallComment ${LANG_GERMAN} "Fügt dem Kontextmenü einen Eintrag hinzu, um entsperrte mit Bitlocker geschützte Laufwerke und Partitionen zu sperren."

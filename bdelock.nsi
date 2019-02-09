@@ -46,7 +46,7 @@ UninstPage instfiles
 # onInit
 Function .onInit
   ${IfNot} ${AtLeastWinVista}
-    MessageBox MB_OK "Windows Vista or above required"
+    MessageBox MB_OK $(MsgWindowsVersion)
     Quit
   ${EndIf}
 FunctionEnd

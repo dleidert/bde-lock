@@ -13,6 +13,7 @@ VIAddVersionKey /LANG=${LANG_ENGLISH} "LegalCopyright"  "Public Domain"
 
 LangString LicenseButtonText   ${LANG_ENGLISH} "I understand"
 LangString LicenseHeaderText   ${LANG_ENGLISH} "License information"
+LangString MsgWindowsVersion   ${LANG_ENGLISH} "Windows Vista or above required"
 LangString RegContextMenuEntry ${LANG_ENGLISH} "Bitlocker Lock Drive"
 LangString RegUninstallDispNam ${LANG_ENGLISH} "Bitlocker Drive Locker - Explorer Context Menu Entry"
 LangString RegUninstallComment ${LANG_ENGLISH} "Adds a context menu entry to lock an unlocked bitlocker encrypted drive/partition."

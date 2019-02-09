@@ -18,16 +18,17 @@
 # Variables
 
 # Installer configuration
-Name "BDELock v${VERSION}"
-InstallDir "$PROGRAMFILES64\${PROJECT}"
-ManifestSupportedOS Win10
-RequestExecutionLevel admin
+CRCCheck on
 InstallColors /windows
-XPStyle on
-SetCompressor /SOLID lzma
+InstallDir "$PROGRAMFILES64\${PROJECT}"
 LicenseData public-domain.txt
+ManifestSupportedOS WinVista Win7 Win8 Win8.1 Win10
+Name "BDELock v${VERSION}"
+RequestExecutionLevel admin
+SetCompressor /SOLID lzma
 ShowInstDetails   hide
 ShowUninstDetails hide
+XPStyle on
 
 # Installer version information
 VIProductVersion "${VERSION}.${REVISION}"

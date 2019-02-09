@@ -33,6 +33,7 @@ XPStyle on
 
 # Installer version information
 VIProductVersion "${VERSION}.${REVISION}"
+VIFileVersion "${VERSION}.${REVISION}"
 
 !include "locale\languages.nsh"
 

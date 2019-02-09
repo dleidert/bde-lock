@@ -31,8 +31,6 @@ ShowUninstDetails hide
 
 # Installer version information
 VIProductVersion "${VERSION}.${REVISION}"
-VIAddVersionKey  "ProductName"     "${PROJECT}"
-VIAddVersionKey  "ProductVersion"  "${VERSION}"
 
 !include "locale\languages.nsh"
 

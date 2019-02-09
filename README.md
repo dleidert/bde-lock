@@ -16,11 +16,11 @@ The installer is localized, supporting German and English at the moment. Adding 
 
 ## Download
 
-[Download the latest installer](https://github.com/dleidert/bde-lock/releases) and execute it.
+[Download the latest installer](https://github.com/dleidert/bde-lock/releases/latest) and execute it.
 
 ## Installation
 
-Go to your download folder and execute the [latest installer](https://github.com/dleidert/bde-lock/releases). Because it creates the drive context menu via registry keys in HKCR, the installation requires elevated permissions, so it cannot be installed as a user.
+Go to your download folder and execute the [latest installer](https://github.com/dleidert/bde-lock/releases/latest). Because it creates the drive context menu via registry keys in HKCR, the installation requires elevated permissions, so it cannot be installed as a user.
 
 ## Uninstallation
 

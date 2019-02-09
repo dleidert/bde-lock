@@ -1,5 +1,6 @@
 # Includes
-!include "x64.nsh"
+!include WinVer.nsh
+!include x64.nsh
 
 # Defines
 !define PROJECT     "bdelock"
@@ -42,6 +43,14 @@ Page license
 Page instfiles
 UninstPage uninstConfirm
 UninstPage instfiles
+
+# onInit
+Function .onInit
+  ${IfNot} ${AtLeastWinVista}
+    MessageBox MB_OK "Windows Vista or above required"
+    Quit
+  ${EndIf}
+FunctionEnd
 
 # Default section
 Section

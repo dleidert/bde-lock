@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "First beta released"
-categories: [blog, release]
 tags: [v0.0.2]
 ---
 

@@ -22,7 +22,7 @@
 CRCCheck on
 InstallColors /windows
 InstallDir "$PROGRAMFILES64\${PROJECT}"
-LicenseData public-domain.txt
+LicenseData LICENSE
 ManifestSupportedOS WinVista Win7 Win8 Win8.1 Win10
 Name "BDELock v${VERSION}"
 RequestExecutionLevel admin

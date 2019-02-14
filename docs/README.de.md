@@ -1,10 +1,10 @@
-[`English`](README) | `Deutsch`
+[`English`](README.md) | **`Deutsch`**
 
 # bde-lock
 
 Einfacher Installer, der im Laufwerks-Kontextmenü einen Eintrag erzeugt, um ein unter Windows mit Bitlocker geschütztes entsperrtes Laufwerk zu sperren 
 
-  * [Über das Projekt](#uber-das-projekt)
+  * [Über das Projekt](#über-das-projekt)
   * [Download](#download)
   * [Installation](#installation)
   * [Deinstallation](#deinstallation)

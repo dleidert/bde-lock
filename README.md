@@ -1,4 +1,4 @@
-`English` | [`Deutsch`](docs/README.de)
+**`English`** | [`Deutsch`](docs/README.de.md)
 
 # bde-lock
 

@@ -1,4 +1,4 @@
-[`English`](README.md) | **`Deutsch`**
+[`English`](/README.md) | **`Deutsch`**
 
 # bde-lock
 
@@ -9,46 +9,42 @@ Einfacher Installer, der im Laufwerks-Kontextmenü einen Eintrag erzeugt, um ein
   * [Installation](#installation)
   * [Deinstallation](#deinstallation)
   * [Quellcode](#quellcode)
-  * [Danke](#danke)
+  * [Danksagung](#danksagung)
   
 ## Über das Projekt
 
-Der Installer kopiert ein [Skript](script/bdelock.vbs) in das Programm-Verzeichnis und erstellt einen Registry-Schlüssel (inklusive Unterschlüssel) in`HKCR/Drive/shell/lock-bde`.
+Der Installer kopiert ein [Skript](/script/bdelock.vbs) in das Programm-Verzeichnis und erstellt denen Registry-Schlüssel `HKCR/Drive/shell/lock-bde` (inklusive Unterschlüssel). Letzterer ist notwendig, um den Eintrag im Kontextmenü zu erzeugen, das bei einem Rechtsklick auf das entsperrte Laufwerk erscheint. Um das Laufwerk zu sperren, wird das Windows-Programm [`manage-bde.exe`](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/manage-bde) mit erhöhten Rechten und dem Laufwerksbuchstaben aufgerufen. Um das zu erreichen, ist ein [(kleines) Skript](/script/bdelock.vbs) notwendig, dass einerseits den Backslash vom Laufwerkspfad entfernt (Beipiel: aus D:\ wird D:) und andererseits die Administratorrechte anfordert.
 
-
-The installer copies a [script](script/bdelock.vbs) to the programs folder and creates the registry key (including sub-keys) in `HKCR/Drive/shell/lock-bde`. The latter basically adds the context menu entry if you right-click on an unlocked drive. For the lock function to work, the Windows program [`manage-bde.exe`](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/manage-bde) needs to be called with elevated rights and it needs to be given the drive letter. Because it is not possible to achieve both things by calling the program from the registry, the [(short) script](script/bdelock.vbs) is necessary, which strips the trailing backslash from the drive path (e.g. D:\ becomes D:) and requests the elevated rights.
-
-The installer is localized, supporting German and English at the moment. Adding new languages is very easy. Just download/copy the file [`en.nsh`](locale/en.nsh), rename it, open it in a text editor, translate the strings and send the file to me.
+Der Installer beherrscht mehrere Sprachen. Momentan werden Deutsch und Englisch unterstützt. Weitere Sprachen hinzuzufügen, ist sehr einfach. Hierzu muss lediglich die Datei [`en.nsh`](/locale/en.nsh) kopiert, umbenannt, in einem Texteditor geöffnet, die einzelnen Passagen übersetzt und an mich [gemailt](https://github.com/dleidert/bde-lock/issues/new) werden.
 
 ## Download
 
-[Download the latest installer](https://github.com/dleidert/bde-lock/releases/latest) and execute it.
+Den [aktuellen Installer herunterladen](https://github.com/dleidert/bde-lock/releases/latest) und ausführen.
 
 ## Installation
 
-Go to your download folder and execute the [latest installer](https://github.com/dleidert/bde-lock/releases/latest). Because it creates the drive context menu via registry keys in HKCR, the installation requires elevated permissions, so it cannot be installed as a user.
+In den Download-Ordner wechseln und den [aktuellen Installer](https://github.com/dleidert/bde-lock/releases/latest) ausführen. Da der Installer einen Registry-Schlüssel in `HKCR` erzeugt, werden für die Installation Administratorrechte benötigt. Eine Installation als Benutzer ist nicht möglich.
 
-## Uninstallation
+## Deinstallation
 
-Go to the Windows `Control Panel > Programs > Uninstall a program`. There you will find it as `Bitlocker Drive Locker - Explorer Context Menu Entry` (or its localized string). Select `Uninstall` and all created registry keys and folders will be removed.
+In Windows `Systemsteuerung > Programme > Programme deinstallieren` aufrufen. Dort befindet sich ein Eintrag `Bitlocker Drive Locker - Explorer Kontextmenüeintrag` (bzw. der abhängig von der Sprache des Betriebssystems lokalisierte Eintrag). `Deinstallieren` auswählen und alle erstellten Registry-Schlüssel und der Programmoderner werden entfernt.
 
-## Source
+## Quellcode
 
-The [complete source](https://github.com/dleidert/bde-lock/tree/master) is human readable. It consists of the [main NSIS installer script file](bdelock.nsi) including the [translations](https://github.com/dleidert/bde-lock/tree/master/locale), some documentation and the [wrapper script for `manage-bde.exe`](script/bdelock.vbs).
+Der [komplette Quellcode](https://github.com/dleidert/bde-lock/tree/master) setzt sich aus Textdateien zusammen und ist menschenlesbar. Er besteht aus der [NSIS Installer-Skriptdatei](/bdelock.nsi) inklusive der [Übersetzungen](https://github.com/dleidert/bde-lock/tree/master/locale), Dokumentation und dem [Mantelskript für `manage-bde.exe`](/script/bdelock.vbs).
 
-The installer can be created by downloading and installing the latest [Nullsoft Scriptable Install System (NSIS)](https://sourceforge.net/projects/nsis/files/latest/download) and use it to compile [`bdelock.nsi`](bdelock.nsi). 
+Der Installer kann einfach selbst erstellt werden. Dafür wird lediglich das aktuelle [Nullsoft Scriptable Install System (NSIS)](https://sourceforge.net/projects/nsis/files/latest/download) benötigt, mit dem die Datei [`bdelock.nsi`](/bdelock.nsi) kompiliert wird.
 
-Even without knowing the detailed NSIS or VBscript syntax, you should be able to understand the source files.
+Selbst ohne genaue Kenntnis von NSIS- oder VBcript-Syntax sind die Quelldateien und was sie tun, gut zu verstehen.
 
-## Credits
+## Danksagung
 
-Special credits go to Shawn Brink, who published [this howto including a vbscript](http://www.eightforums.com/tutorials/21325-lock-drive-add-context-menu-bitlocker-drives.html).
+Ein spezieller Dank geht an Shawn Brink, der [dieses Howto inklusive eines Skripts](http://www.eightforums.com/tutorials/21325-lock-drive-add-context-menu-bitlocker-drives.html) veröffentlicht hat.
 
 <details>
-  <summary>More resources ...</summary>
-There are various resources to look at. The most popular ones are probably
+  <summary>Mehr ...</summary>
+Es gibt viele weitere Blog- und Foreneinträge, die sich mit dem Thema beschäftigen. Die populärsten sind vermutlich
 
-* http://www.eightforums.com/tutorials/21325-lock-drive-add-context-menu-bitlocker-drives.html
 * https://social.technet.microsoft.com/Forums/windows/en-US/41607938-7452-440d-8253-67fe8657bc0f/how-to-relock-a-drive-with-bitlocker?forum=w7itprosecurity
 * https://answers.microsoft.com/en-us/windows/forum/windows_7-performance/hot-to-lock-the-bitlocker-encrypted-drive-without/6ae82827-38ee-46dc-93d2-f5d2888324c2
 </details>

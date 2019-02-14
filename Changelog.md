@@ -1,6 +1,6 @@
 # Changelog
 
-## bdelock 0.0.3 UNRELEASED ([compare](https://github.com/dleidert/bde-lock/compare/v0.0.2...master#files_bucket))
+## [bdelock 0.0.3](https://github.com/dleidert/bde-lock/releases/tag/v0.0.3) ([compare](https://github.com/dleidert/bde-lock/compare/v0.0.2...v0.0.3))
 
 * Added Changelog
 * Changed source file encoding to UTF-8 

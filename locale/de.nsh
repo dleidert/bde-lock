@@ -13,11 +13,11 @@ VIAddVersionKey /LANG=${LANG_GERMAN} "LegalCopyright"  "Public Domain"
 
 LangString LicenseButtonText   ${LANG_GERMAN} "Ich verstehe"
 LangString LicenseHeaderText   ${LANG_GERMAN} "Lizenzinformation"
-LangString MsgBitlockerError   ${LANG_GERMAN} "Bitlocker-Test ist fehlgeschlagen oder Bitlocker ist nicht installiert. Soll die Installation dennoch fortgeführt werden?"
-LangString MsgWindowsVersion   ${LANG_GERMAN} "Windows Vista oder höher wird benötigt"
+LangString MsgBitlockerError   ${LANG_GERMAN} "Bitlocker-Test ist fehlgeschlagen oder Bitlocker ist nicht installiert. Soll die Installation dennoch fortgefÃ¼hrt werden?"
+LangString MsgWindowsVersion   ${LANG_GERMAN} "Windows Vista oder hÃ¶her wird benÃ¶tigt"
 LangString RegContextMenuEntry ${LANG_GERMAN} "Bitlocker Laufwerk sperren"
-LangString RegUninstallDispNam ${LANG_GERMAN} "Bitlocker Drive Locker - Explorer Kontextmenüeintrag"
-LangString RegUninstallComment ${LANG_GERMAN} "Fügt dem Kontextmenü einen Eintrag hinzu, um entsperrte mit Bitlocker geschützte Laufwerke und Partitionen zu sperren."
+LangString RegUninstallDispNam ${LANG_GERMAN} "Bitlocker Drive Locker - Explorer KontextmenÃ¼eintrag"
+LangString RegUninstallComment ${LANG_GERMAN} "FÃ¼gt dem KontextmenÃ¼ einen Eintrag hinzu, um entsperrte mit Bitlocker geschÃ¼tzte Laufwerke und Partitionen zu sperren."
 LangString RegUninstallReadme  ${LANG_GERMAN} "docs/Readme.de.md"
 
 LangString UserLanguageId      ${LANG_GERMAN} ${LANG_GERMAN}

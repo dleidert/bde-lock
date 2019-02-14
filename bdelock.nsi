@@ -1,4 +1,4 @@
-# Includes
+﻿# Includes
 !include WinVer.nsh
 !include x64.nsh
 

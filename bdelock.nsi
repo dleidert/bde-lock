@@ -91,7 +91,7 @@ Section
   WriteRegStr   HKLM "${REG_UNINSTALL}" "URLInfoAbout"    "${WEBPAGE}"
   WriteRegStr   HKLM "${REG_UNINSTALL}" "URLUpdateInfo"   "${WEBPAGE}/releases"
   WriteRegStr   HKLM "${REG_UNINSTALL}" "HelpLink"        "${WEBPAGE}/wiki"
-  WriteRegStr   HKLM "${REG_UNINSTALL}" "Readme"          "${WEBPAGE}/blob/master/README.md"
+  WriteRegStr   HKLM "${REG_UNINSTALL}" "Readme"          "${WEBPAGE}/blob/master/$(RegUninstallReadme)"
   WriteRegDWORD HKLM "${REG_UNINSTALL}" "EstimatedSize"   "40"
   WriteRegDWORD HKLM "${REG_UNINSTALL}" "Language"        $(UserLanguageId)
   WriteRegDWORD HKLM "${REG_UNINSTALL}" "NoModify"        "1"

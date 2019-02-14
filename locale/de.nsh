@@ -18,5 +18,6 @@ LangString MsgWindowsVersion   ${LANG_GERMAN} "Windows Vista oder höher wird ben
 LangString RegContextMenuEntry ${LANG_GERMAN} "Bitlocker Laufwerk sperren"
 LangString RegUninstallDispNam ${LANG_GERMAN} "Bitlocker Drive Locker - Explorer Kontextmenüeintrag"
 LangString RegUninstallComment ${LANG_GERMAN} "Fügt dem Kontextmenü einen Eintrag hinzu, um entsperrte mit Bitlocker geschützte Laufwerke und Partitionen zu sperren."
+LangString RegUninstallReadme  ${LANG_GERMAN} "docs/Readme.de.md"
 
 LangString UserLanguageId      ${LANG_GERMAN} ${LANG_GERMAN}

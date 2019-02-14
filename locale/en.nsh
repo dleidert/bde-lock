@@ -18,5 +18,6 @@ LangString MsgWindowsVersion   ${LANG_ENGLISH} "Windows Vista or above required"
 LangString RegContextMenuEntry ${LANG_ENGLISH} "Bitlocker Lock Drive"
 LangString RegUninstallDispNam ${LANG_ENGLISH} "Bitlocker Drive Locker - Explorer Context Menu Entry"
 LangString RegUninstallComment ${LANG_ENGLISH} "Adds a context menu entry to lock an unlocked bitlocker encrypted drive/partition."
+LangString RegUninstallReadme  ${LANG_ENGLISH} "Readme.md"
 
 LangString UserLanguageId      ${LANG_ENGLISH} ${LANG_ENGLISH}

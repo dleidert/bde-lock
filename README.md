@@ -33,7 +33,7 @@ Go to the Windows `Control Panel > Programs > Uninstall a program`. There you wi
 
 The [complete source](https://github.com/dleidert/bde-lock/tree/master) is assembled from text files and is human readable. It basically consists of the [main NSIS installer script file](/bdelock.nsi) including the [translations](https://github.com/dleidert/bde-lock/tree/master/locale), some documentation and the [wrapper script for `manage-bde.exe`](/script/bdelock.vbs).
 
-The installer can be created by downloading and installing the latest [Nullsoft Scriptable Install System (NSIS)](https://sourceforge.net/projects/nsis/files/latest/download) and use it to compile [`bdelock.nsi`](/bdelock.nsi). 
+The installer can be created by downloading and installing the latest [Nullsoft Scriptable Install System (NSIS)](https://sourceforge.net/projects/nsis/files/latest/download) and using it to compile [`bdelock.nsi`](/bdelock.nsi). 
 
 Even without knowing the detailed NSIS or VBscript syntax, you should be able to understand the source files.
 
@@ -44,6 +44,7 @@ Special credits go to Shawn Brink, who published [this howto including a vbscrip
 <details>
   <summary>More resources ...</summary>
 There are more resources to look at. The most popular ones are probably
+
 
 * https://social.technet.microsoft.com/Forums/windows/en-US/41607938-7452-440d-8253-67fe8657bc0f/how-to-relock-a-drive-with-bitlocker?forum=w7itprosecurity
 * https://answers.microsoft.com/en-us/windows/forum/windows_7-performance/hot-to-lock-the-bitlocker-encrypted-drive-without/6ae82827-38ee-46dc-93d2-f5d2888324c2

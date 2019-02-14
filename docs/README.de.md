@@ -13,7 +13,7 @@ Einfacher Installer, der im Laufwerks-Kontextmenü einen Eintrag erzeugt, um ein
   
 ## Über das Projekt
 
-Der Installer kopiert ein [Skript](/script/bdelock.vbs) in das Programm-Verzeichnis und erstellt denen Registry-Schlüssel `HKCR/Drive/shell/lock-bde` (inklusive Unterschlüssel). Letzterer ist notwendig, um den Eintrag im Kontextmenü zu erzeugen, das bei einem Rechtsklick auf das entsperrte Laufwerk erscheint. Um das Laufwerk zu sperren, wird das Windows-Programm [`manage-bde.exe`](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/manage-bde) mit erhöhten Rechten und dem Laufwerksbuchstaben aufgerufen. Um das zu erreichen, ist ein [(kleines) Skript](/script/bdelock.vbs) notwendig, dass einerseits den Backslash vom Laufwerkspfad entfernt (Beipiel: aus D:\ wird D:) und andererseits die Administratorrechte anfordert.
+Der Installer kopiert ein [Skript](/script/bdelock.vbs) in das Programm-Verzeichnis und erstellt den Registry-Schlüssel `HKCR/Drive/shell/lock-bde` (inklusive Unterschlüssel). Letzterer ist notwendig, um den Eintrag im Kontextmenü zu erzeugen, das bei einem Rechtsklick auf das entsperrte Laufwerk erscheint. Um das Laufwerk zu sperren, wird das Windows-Programm [`manage-bde.exe`](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/manage-bde) mit erhöhten Rechten und dem Laufwerksbuchstaben aufgerufen. Um das zu erreichen, ist ein [(kleines) Skript](/script/bdelock.vbs) notwendig, dass einerseits den Backslash vom Laufwerkspfad entfernt (Beipiel: aus D:\ wird D:) und andererseits die Administratorrechte anfordert.
 
 Der Installer beherrscht mehrere Sprachen. Momentan werden Deutsch und Englisch unterstützt. Weitere Sprachen hinzuzufügen, ist sehr einfach. Hierzu muss lediglich die Datei [`en.nsh`](/locale/en.nsh) kopiert, umbenannt, in einem Texteditor geöffnet, die einzelnen Passagen übersetzt und an mich [gemailt](https://github.com/dleidert/bde-lock/issues/new) werden.
 
@@ -44,6 +44,7 @@ Ein spezieller Dank geht an Shawn Brink, der [dieses Howto inklusive eines Skrip
 <details>
   <summary>Mehr ...</summary>
 Es gibt viele weitere Blog- und Foreneinträge, die sich mit dem Thema beschäftigen. Die populärsten sind vermutlich
+
 
 * https://social.technet.microsoft.com/Forums/windows/en-US/41607938-7452-440d-8253-67fe8657bc0f/how-to-relock-a-drive-with-bitlocker?forum=w7itprosecurity
 * https://answers.microsoft.com/en-us/windows/forum/windows_7-performance/hot-to-lock-the-bitlocker-encrypted-drive-without/6ae82827-38ee-46dc-93d2-f5d2888324c2

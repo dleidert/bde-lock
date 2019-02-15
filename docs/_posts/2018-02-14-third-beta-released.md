@@ -2,7 +2,9 @@
 layout: post
 title:  "Pre-release 0.0.3 released"
 description: "Release notes for bdelock version 0.0.3"
+author: dleidert <daniel.leidert@wgdd.de>
 tags: [v0.0.3 pre-release]
+comments: true
 ---
 
 # Released bde-lock version 0.0.3

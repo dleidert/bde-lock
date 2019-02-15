@@ -10,7 +10,7 @@ description: Detailed changelog for the various bde-lock releases
 
 *
 
-## [bdelock 0.0.3](https://github.com/dleidert/bde-lock/releases/tag/v0.0.3) ([compare](https://github.com/dleidert/bde-lock/compare/v0.0.2...v0.0.3 "Differences between versions 0.0.2 and 0.0.3"))
+## [bdelock 0.0.3](https://github.com/dleidert/bde-lock/releases/tag/v0.0.3) ([compare](https://github.com/dleidert/bde-lock/compare/v0.0.2...v0.0.3#files_bucket "Differences between versions 0.0.2 and 0.0.3"))
 
 * Added Changelog
 * Changed source file encoding to UTF-8

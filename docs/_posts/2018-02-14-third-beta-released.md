@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "First beta released"
+title:  "Pre-release 0.0.3 released"
 description: "Release notes for bdelock version 0.0.3"
 tags: [v0.0.3 pre-release]
 ---

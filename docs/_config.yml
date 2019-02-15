@@ -4,3 +4,8 @@ description: simple Windows installer for a drive context menu function to lock 
 show_downloads: true
 google_analytics:
 show_excerpts: true
+
+minima:
+  social_links:
+    github: dleidert
+    instagram: daniel.leidert

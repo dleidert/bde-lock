@@ -7,7 +7,7 @@
 ## [bdelock 0.0.3](https://github.com/dleidert/bde-lock/releases/tag/v0.0.3) ([compare](https://github.com/dleidert/bde-lock/compare/v0.0.2...v0.0.3))
 
 * Added Changelog
-* Changed source file encoding to UTF-8 
+* Changed source file encoding to UTF-8
 * public-domain.txt renamed to LICENSE and clarified
 * Improved documentation including link fixes
 * Localized README added for German

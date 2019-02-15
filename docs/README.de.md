@@ -2,7 +2,7 @@
 
 # bde-lock
 
-Einfacher Installer, der im Laufwerks-Kontextmenü einen Eintrag erzeugt, um ein unter Windows mit Bitlocker geschütztes entsperrtes Laufwerk zu sperren 
+Einfacher Installer, der im Laufwerks-Kontextmenü einen Eintrag erzeugt, um ein unter Windows mit Bitlocker geschütztes entsperrtes Laufwerk zu sperren
 
   * [Über das Projekt](#über-das-projekt)
   * [Download](#download)
@@ -10,7 +10,7 @@ Einfacher Installer, der im Laufwerks-Kontextmenü einen Eintrag erzeugt, um ein
   * [Deinstallation](#deinstallation)
   * [Quellcode](#quellcode)
   * [Danksagung](#danksagung)
-  
+
 ## Über das Projekt
 
 Der Installer kopiert ein [Skript](/script/bdelock.vbs) in das Programm-Verzeichnis und erstellt den Registry-Schlüssel `HKCR/Drive/shell/lock-bde` (inklusive Unterschlüssel). Letzterer ist notwendig, um den Eintrag im Kontextmenü zu erzeugen, das bei einem Rechtsklick auf das entsperrte Laufwerk erscheint. Um das Laufwerk zu sperren, wird das Windows-Programm [`manage-bde.exe`](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/manage-bde) mit erhöhten Rechten und dem Laufwerksbuchstaben aufgerufen. Um das zu erreichen, ist ein [(kleines) Skript](/script/bdelock.vbs) notwendig, dass einerseits den Backslash vom Laufwerkspfad entfernt (Beipiel: aus D:\ wird D:) und andererseits die Administratorrechte anfordert.

@@ -1,10 +1,12 @@
+author: Daniel Leidert
+email: daniel.leidert@wgdd.de
 locale: en
 theme: jekyll-theme-minimal
 title: bde-lock - project documentation
 description: simple Windows installer for a drive context menu function to lock an unlocked BitLocker encrypted drive
 show_downloads: true
 google_analytics:
-show_excerpts: true
+show_excerpts: false
 
 minima:
   social_links:

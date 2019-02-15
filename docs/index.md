@@ -7,6 +7,10 @@ title: bde-lock
 
 ...
 
+## Changelog
+
+The latest changes can be found [here](./changelog.html).
+
 ## Posts
 
 <ul>

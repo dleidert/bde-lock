@@ -1,3 +1,12 @@
+---
+layout: default
+title: Changelog for the bde-lock project
+description: Changelog for the bde-lock project
+excepert: Changes and more
+---
+
+[back](./)
+
 # Changelog
 
 ## bdelock 0.0.4 UNRELEASED ([compare](https://github.com/dleidert/bde-lock/compare/v0.0.3...master#files_bucket))

@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "Pre-release 0.0.3 released"
-description: "Release notes for bdelock version 0.0.3"
-author: dleidert <daniel.leidert@wgdd.de>
-tags: [v0.0.3 pre-release]
+title: Pre-release 0.0.3 released
+description: Release notes for bdelock version 0.0.3 - UTF-8 installer with improved tests and localization
+author: Daniel Leidert
+tags:
+  - v0.0.3
+  - pre-release
 comments: true
 ---
 

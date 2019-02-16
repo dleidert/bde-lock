@@ -16,7 +16,7 @@ The file contains basically four different types of entries:
 
 ### LoadLanguageFile "${NSISDIR}\Contrib\Language files\\*language\_file*.nlf"
 
-The [LoadLanguageFile](https://nsis.sourceforge.io/Reference/LoadLanguageFile) instruction is necessary to load the localized button and page texts of the installer itself. The language file (here `English.nlf`) is provided by the [NSIS project](https://sourceforge.net/p/nsis/code/HEAD/tree/NSIS/trunk/Contrib/Language%20files). Checkout the link to find your language file and replace `English.nlf` with the one for your language.
+The [`LoadLanguageFile`](https://nsis.sourceforge.io/Reference/LoadLanguageFile) instruction is necessary to load the localized button and page texts of the installer itself. The language file (e.g. `English.nlf`) is provided by the [NSIS project](https://sourceforge.net/p/nsis/code/HEAD/tree/NSIS/trunk/Contrib/Language%20files). Checkout the link to find your language file and replace `English.nlf` with the one for your language.
 
 For German the entry looks like this:
 
@@ -26,7 +26,7 @@ LoadLanguageFile "${NSISDIR}\Contrib\Language files\German.nlf"
 
 ### LangString Name *language\_id* "*localized\_language\_name*"
 
-[LangString Name](https://nsis.sourceforge.io/Reference/LangString) holds the **localized** name of the language. The variable `${LANG_ENGLISH}` is the language ID code for English, defined by the NSIS project. Every language has such a variable. So the language ID code variable needs to be adjusted for the language to be added. If you don't know the ID, just ignore it. I'll care about that.
+[`LangString Name`](https://nsis.sourceforge.io/Reference/LangString) holds the **localized** name of the language. The variable `${LANG_ENGLISH}` is the language ID code for English, defined by the NSIS project. Every language has such a variable. So the language ID code variable needs to be adjusted for the language to be added. If you don't know the ID, just ignore it. I'll care about that.
 
 For German the entry looks like this:
 
@@ -36,34 +36,34 @@ LangString Name ${LANG_GERMAN} "Deutsch"
 
 ### VIAddVersionKey /LANG=*language\_id* "*field*" "*value*"
 
-The [VIAddVersionKey](https://nsis.sourceforge.io/Reference/VIAddVersionKey) instruction adds field values to the installer file properties. It also requires to be given the language ID as shown above. Please note, that you must not remove any field here, but not all fields require a translation. See the following table.
+The [`VIAddVersionKey`](https://nsis.sourceforge.io/Reference/VIAddVersionKey) instruction adds field values to the installer file properties. It also requires to be given the language ID as shown above. Please note, that you must not remove any field here, but not all fields require a translation. See the following table.
 
 Field | Description | Value localized
 ------|-------------|----------------
-ProductName | Name of bde-lock | no
-ProductVersion | Version of bde-lock | no
-FileVersion | Installer file version | no
-FileDescription | Installer file description | **yes**
-Comment | User-friendly comment about the installer | **yes**
-LegalCopyright | Copyright information | no
+`ProductName` | Name of bde-lock | no
+`ProductVersion` | Version of bde-lock | no
+`FileVersion` | Installer file version | no
+`FileDescription` | Installer file description | **yes**
+`Comment` | User-friendly comment about the installer | **yes**
+`LegalCopyright` | Copyright information | no
 
 So usually only `FileDescription` and `Comment` need to be changed for the translation.
 
 ### LangString *variable* *language\_id* "*localized\_text*"
 
-The [LangString](https://nsis.sourceforge.io/Reference/LangString) instruction assigns a localized text to a variable. The language ID code defines the corresponding language, under which the variable content should be used. With one exception, all variables should be translated. The following table gives more context and explains, where the strings appear.
+The [`LangString`](https://nsis.sourceforge.io/Reference/LangString) instruction assigns a localized text to a variable. The language ID code defines the corresponding language, under which the variable content should be used. With one exception, all variables should be translated. The following table gives more context and explains, where the strings appear.
 
 Variable | Description | Value localized
 ---------|-------------|----------------
-LicenseButtonText   | Button text on the installers license page | yes
-LicenseHeaderText   | Header text on the installers license page | yes
-MsgBitlockerError   | Warning shown, if the installer cannot find the registry key, that indicates the presence of Bitlocker during installation | yes
-MsgWindowsVersion   | Warning shown, if the installer finds an unsupported Windows version | yes
-RegContextMenuEntry | **entry shown in the drive context menu** | yes
-RegUninstallDispNam | Program name shown in `System properties > Programs > Uninstall program` | yes
-RegUninstallComment | Comment shown for the program in `System properties > Programs > Uninstall program` | yes
-RegUninstallReadme  | The name and repository path of the localized (translated) version of [README.md](https://github.com/dleidert/bde-lock/blob/master/README.md) | (yes)
-UserLanguageId      | Windows language ID (needs to be set correctly, but not translated) | **no**
+`LicenseButtonText`   | Button text on the installers license page | yes
+`LicenseHeaderText`   | Header text on the installers license page | yes
+`MsgBitlockerError`   | Warning shown, if the installer cannot find the registry key, that indicates the presence of BitLocker during installation | yes
+`MsgWindowsVersion`   | Warning shown, if the installer finds an unsupported Windows version | yes
+`RegContextMenuEntry` | **entry shown in the drive context menu** | yes
+`RegUninstallDispNam` | Program name shown in `System properties > Programs > Uninstall program` | yes
+`RegUninstallComment` | Comment shown for the program in `System properties > Programs > Uninstall program` | yes
+`RegUninstallReadme`  | The name and repository path of the localized (translated) version of [README.md](https://github.com/dleidert/bde-lock/blob/master/README.md) | (yes)
+`UserLanguageId`      | Windows language ID (needs to be set correctly, but not translated) | **no**
 
 The most important string is `RegContextMenuEntry`. It is the one shown in the drive context menu to lock the drive.
 

@@ -12,6 +12,7 @@ header_pages:
   - index.md
   - about.md
   - changelog.md
+  - translation.md
 
 social:
   name: Daniel Leidert

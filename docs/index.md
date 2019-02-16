@@ -6,7 +6,7 @@ description: Documentation about bde-lock, a simple Windows installer to create 
 
 # bde-lock
 
-`bde-lock` - simple [Windows installer](https://github.com/dleidert/bde-lock/releases/latest) to create a drive context menu entry to lock and unlocked BitLocker encrypted drive
+`bde-lock` - simple [Windows installer](https://github.com/dleidert/bde-lock/releases/latest) to create a drive context menu entry to lock an unlocked BitLocker encrypted drive
 
 ## Download and Installation
 
@@ -20,7 +20,7 @@ The installer will add a ([localized](./translation)) string to the drive contex
 
 ## Uninstallation
 
-Go to the Windows `Control panel > Programs > Uninstall program` and choose the uninstall `Bitlocker Drive Locker`.
+Go to the Windows `Control panel > Programs > Uninstall program` and choose to uninstall `Bitlocker Drive Locker`.
 
 ## Posts
 

@@ -20,14 +20,17 @@ social:
     - https://github.com/dleidert/
     - https://instagram.com/daniel.leidert/
 
+# minima >2.5.0 (current master)
 minima:
   social_links:
     github: dleidert
     instagram: daniel.leidert
     rss: rss
 
+# minima 2.5.0
 github_username: dleidert
 instagram_username: daniel.leidert
+rss: rss
 
 plugins:
  - jekyll-feed

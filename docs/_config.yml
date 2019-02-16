@@ -8,6 +8,7 @@ show_downloads: true
 show_excerpts: true
 google_analytics:
 paginate: 6
+excerpt_separator: <!-- excerpt -->
 
 header_pages:
   - about.md

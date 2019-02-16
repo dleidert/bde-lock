@@ -9,7 +9,7 @@ VIAddVersionKey /LANG=${LANG_GERMAN} "ProductVersion"  "${VERSION}"
 VIAddVersionKey /LANG=${LANG_GERMAN} "FileVersion"     "${VERSION}"
 VIAddVersionKey /LANG=${LANG_GERMAN} "FileDescription" "BDE Lock Installer"
 VIAddVersionKey /LANG=${LANG_GERMAN} "Comments"        "Installs a context menu entry to lock unlocked Bitlocker-encrypted drives"
-VIAddVersionKey /LANG=${LANG_GERMAN} "LegalCopyright"  "Public Domain"
+VIAddVersionKey /LANG=${LANG_GERMAN} "LegalCopyright"  "${LEGALNOTE}"
 
 LangString LicenseButtonText   ${LANG_GERMAN} "Ich verstehe"
 LangString LicenseHeaderText   ${LANG_GERMAN} "Lizenzinformation"

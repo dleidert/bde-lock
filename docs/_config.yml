@@ -11,6 +11,7 @@ google_analytics:
 header_pages:
   - index.md
   - about.md
+  - posts.md
   - changelog.md
   - translation.md
 

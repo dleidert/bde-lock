@@ -23,3 +23,9 @@ MultiSelectModel | REG_SZ | Specify the [selection model](https://docs.microsoft
 Entry | Type | Explanation | Value | Localized
 ------|------|-------------|-------|----------
 (Default) | REG_EXPAND_SZ | The command to run | `%SystemRoot%\System32\wscript.exe "%ProgramFiles%\bde-lock\bdelock.vbs" %1` | no
+
+## Uninstaller entry
+
+### HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\bdelock
+
+The entries below this key are explained [here](https://docs.microsoft.com/en-us/windows/desktop/msi/uninstall-registry-key). The entries `NoModify` and `NoRepair` are described [here](https://docs.microsoft.com/en-us/windows/desktop/msi/arpnomodify) and [here](https://docs.microsoft.com/en-us/windows/desktop/msi/arpnorepair).

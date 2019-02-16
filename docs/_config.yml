@@ -9,11 +9,21 @@ show_excerpts: true
 google_analytics:
 
 header_pages:
+  - index.md
   - changelog.md
   - about.md
+
+social:
+  name: Daniel Leidert
+  links:
+    - https://github.com/dleidert/
 
 minima:
   social_links:
     github: dleidert
     instagram: daniel.leidert
     rss: rss
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag

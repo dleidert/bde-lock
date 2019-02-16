@@ -22,4 +22,4 @@ MultiSelectModel | REG_SZ | Specify the [selection model](https://docs.microsoft
 
 Entry | Type | Explanation | Value | Localized
 ------|------|-------------|-------|----------
-(Default) | REG_EXPAND_SZ | The command to run | `%SystemRoot%\System32\wscript.exe $\"%ProgramFiles%\${PROJECT}\bdelock.vbs$\" %1` | no
+(Default) | REG_EXPAND_SZ | The command to run | `%SystemRoot%\System32\wscript.exe "%ProgramFiles%\bde-lock\bdelock.vbs" %1` | no

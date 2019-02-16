@@ -8,6 +8,10 @@ show_downloads: true
 show_excerpts: true
 google_analytics:
 
+header_pages:
+  - changelog.md
+  - about.md
+
 minima:
   social_links:
     github: dleidert

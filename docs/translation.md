@@ -17,7 +17,7 @@ The [LoadLanguageFile](https://nsis.sourceforge.io/Reference/LoadLanguageFile) i
 For German the entry looks like this:
 
 ```
-LoadLanguageFile "${NSISDIR}\Contrib\Language files\[German.nlf](https://sourceforge.net/p/nsis/code/HEAD/tree/NSIS/trunk/Contrib/Language%20files/German.nlf)"
+LoadLanguageFile "${NSISDIR}\Contrib\Language files\German.nlf"
 ``` 
 
 ## LangString Name *language\_id* "*localized\_language\_name*"

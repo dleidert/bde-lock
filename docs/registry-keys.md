@@ -15,7 +15,7 @@ Entry | Type | Explanation | Value | Localized
 ------|------|-------------|-------|----------
 (Default) | REG_SZ | Name of the context menu entry | [`Bitlocker Lock Drive`](/locale/en.nsh#L18) | yes
 AppliesTo | REG_SZ | Rule, when the entry should be displayed | [`(System.Volume.BitLockerProtection:=1 OR System.Volume.BitLockerProtection:=3 OR System.Volume.BitLockerProtection:=5) AND NOT C:`](/bdelock.nsi#L77) | no
-HasLUAShield | REG_SZ | Adds UAC shield icon to entry | (empty) | no
+HasLUAShield | REG_SZ | Adds UAC shield icon to entry | *(empty)* | no
 MultiSelectModel | REG_SZ | Specify the [selection model](https://docs.microsoft.com/en-us/windows/desktop/shell/how-to-employ-the-verb-selection-model) | `Single` | no
 
 ### `HKCR\Drive\shell\bde-lock\command`

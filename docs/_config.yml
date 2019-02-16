@@ -1,6 +1,6 @@
 theme: jekyll-theme-minimal
 title: bde-lock - project documentation
-description: simple Windows installer for a drive context menu function to lock an unlocked BitLocker encrypted drive
+description: a simple Windows installer for a drive context menu function to lock an unlocked BitLocker encrypted drive in Windows
 author: Daniel Leidert
 email: daniel.leidert@wgdd.de
 lang: en

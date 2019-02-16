@@ -10,8 +10,8 @@ google_analytics:
 
 header_pages:
   - index.md
-  - changelog.md
   - about.md
+  - changelog.md
 
 social:
   name: Daniel Leidert

@@ -20,7 +20,7 @@ The installer will add a ([localized](./translation)) string to the drive contex
 
 ## Uninstallation
 
-Go to the Windows `Control panel > Programs > Uninstall program` and choose the uninstall `Bitlocker Drive Locker`.
+Go to the Windows `Control panel > Programs > Uninstall program` and choose to uninstall `Bitlocker Drive Locker`.
 
 ## Posts
 

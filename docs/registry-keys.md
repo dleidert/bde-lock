@@ -13,12 +13,13 @@ lang: en
 
 Entry | Type | Explanation | Value | Localized
 ------|------|-------------|-------|----------
-(Default) | REG_SZ | Name of the context menu entry | [Bitlocker Lock Drive](/locale/en.nsh#L18) | yes
+(Default) | REG_SZ | Name of the context menu entry | [`Bitlocker Lock Drive`](/locale/en.nsh#L18) | yes
+AppliesTo | REG_SZ | Rule, when the entry should be displayed | [`(System.Volume.BitLocker...) AND NOT C:`](/bdelock.nsi#L77) | no
+HasLUAShield | REG_SZ | Adds UAC shield icon to entry | (empty) | no
+MultiSelectModel | REG_SZ | Specify the [selection model](https://docs.microsoft.com/en-us/windows/desktop/shell/how-to-employ-the-verb-selection-model) | `Single` | no
 
 ### `HKCR\Drive\shell\bde-lock\command`
 
 Entry | Type | Explanation | Value | Localized
 ------|------|-------------|-------|----------
-AppliesTo | REG_SZ | Rule, when the entry should be displayed | [(System.Volume.BitLocker...) AND NOT C:](/bdelock.nsi#L77) | no
-HasLUAShield | REG_SZ | Adds UAC shield icon to entry | (empty) | no
-MultiSelectModel | REG_SZ | Specify the selection model (here single) | Single | no
+(Default) | REG_EXPAND_SZ | The command to run | `%SystemRoot%\System32\wscript.exe $\"%ProgramFiles%\${PROJECT}\bdelock.vbs$\" %1` | no

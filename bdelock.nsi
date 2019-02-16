@@ -1,6 +1,7 @@
 ﻿# Includes
 !include WinVer.nsh
 !include x64.nsh
+!include FileFunc.nsh
 
 # Defines
 !define PROJECT     "bdelock"
@@ -93,11 +94,12 @@ Section
   WriteRegStr   HKLM "${REG_UNINSTALL}" "URLUpdateInfo"   "${WEBPAGE}/releases"
   WriteRegStr   HKLM "${REG_UNINSTALL}" "HelpLink"        "${WEBPAGE}/wiki"
   WriteRegStr   HKLM "${REG_UNINSTALL}" "Readme"          "${WEBPAGE}/blob/master/$(RegUninstallReadme)"
-  WriteRegDWORD HKLM "${REG_UNINSTALL}" "EstimatedSize"   "40"
   WriteRegDWORD HKLM "${REG_UNINSTALL}" "Language"        $(UserLanguageId)
   WriteRegDWORD HKLM "${REG_UNINSTALL}" "NoModify"        "1"
   WriteRegDWORD HKLM "${REG_UNINSTALL}" "NoRepair"        "1"
-  SetOverwrite on
+  ${GetSize} "$INSTDIR" "/S=0K" $0 $1 $2
+  IntFmt $0 "0x%08X" $0
+  WriteRegDWORD HKLM "${REG_UNINSTALL}" "EstimatedSize"   "$0"
 SectionEnd
 
 # Uninstaller section

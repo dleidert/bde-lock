@@ -7,4 +7,18 @@ lang: en
 
 # Windows registry-keys created by bde-lock
 
+## Drive context menu function
 
+### `HKCR\Drive\shell\bde-lock`
+
+Entry | Type | Explanation | Value | Localized
+------|------|-------------|-------|----------
+(Default) | REG_SZ | Name of the context menu entry | [Bitlocker Lock Drive](/locale/en.nsh#L18) | yes
+
+### `HKCR\Drive\shell\bde-lock\command`
+
+Entry | Type | Explanation | Value | Localized
+------|------|-------------|-------|----------
+AppliesTo | REG_SZ | Rule, when the entry should be displayed | [(System.Volume.BitLocker...) AND NOT C:](/bdelock.nsi#L77) | no
+HasLUAShield | REG_SZ | Adds UAC shield icon to entry | (empty) | no
+MultiSelectModel | REG_SZ | Specify the selection model (here single) | Single | no

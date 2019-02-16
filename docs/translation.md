@@ -4,7 +4,7 @@ title: Translation
 description: how to contribute translations to the bde-lock installer, which will appear in the context menu, the Windows control panel and the installer itself
 ---
 
-# Translations
+# Translating the installer and context menu
 
 The installer is localized. This means, that the installer itself, the context menu entry and the entry in the Windows control panel can be translated. This page tries to explain, how to contribute new translations, and to give some more context to the strings to translate.
 
@@ -22,20 +22,20 @@ LoadLanguageFile "${NSISDIR}\Contrib\Language files\[German.nlf](https://sourcef
 
 ## LangString Name *language\_id* "*localized\_language\_name*"
 
-[LangString Name](https://nsis.sourceforge.io/Reference/LangString) holds the **localized** name of the language. The variable `${LANG\_ENGLISH}` is the language ID code for English, defined by the NSIS project. Every language has such a variable. So the language ID code variable needs to be adjusted for the language to be added. If you don't know the ID, just ignore it. I'll care about that.
+[LangString Name](https://nsis.sourceforge.io/Reference/LangString) holds the **localized** name of the language. The variable `${LANG_ENGLISH}` is the language ID code for English, defined by the NSIS project. Every language has such a variable. So the language ID code variable needs to be adjusted for the language to be added. If you don't know the ID, just ignore it. I'll care about that.
 
 For German the entry looks like this:
 
 ```
-LangString Name ${LANG\_GERMAN} "Deutsch"
+LangString Name ${LANG_GERMAN} "Deutsch"
 ```
 
 ## VIAddVersionKey /LANG=*language\_id* "*field*" "*value*"
 
 The [VIAddVersionKey](https://nsis.sourceforge.io/Reference/VIAddVersionKey) instruction adds field values to the installer file properties. It also requires to be given the language ID as shown above. Please note, that you must not remove any field here, but not all fields require a translation. See the following table.
 
-Field | Description | Localized
-------|-------------|----------
+Field | Description | Value localized
+------|-------------|----------------
 ProductName | Name of bde-lock | no
 ProductVersion | Version of bde-lock | no
 FileVersion | Installer file version | no
@@ -49,8 +49,8 @@ So usually only `FileDescription` and `Comment` need to be changed for the trans
 
 The [LangString](https://nsis.sourceforge.io/Reference/LangString) instruction assigns a localized text to a variable. The language ID code defines the corresponding language, under which the variable content should be used. With one exception, all variables should be translated. The following table gives more context and explains, where the strings appear.
 
-Variable | Description | Localized
----------|-------------|----------
+Variable | Description | Value localized
+---------|-------------|----------------
 LicenseButtonText   | Button text on the installers license page | yes
 LicenseHeaderText   | Header text on the installers license page | yes
 MsgBitlockerError   | Warning shown, if the installer cannot find the registry key, that indicates the presence of Bitlocker during installation | yes
@@ -58,7 +58,11 @@ MsgWindowsVersion   | Warning shown, if the installer finds an unsupported Windo
 RegContextMenuEntry | **entry shown in the drive context menu** | yes
 RegUninstallDispNam | Program name shown in `System properties > Programs > Uninstall program` | yes
 RegUninstallComment | Comment shown for the program in `System properties > Programs > Uninstall program` | yes
-RegUninstallReadme  | The name and repository path of the localized (translated) version of [Readme.md](https://github.com/dleidert/bde-lock/blob/master/Readme.md) | (yes)
+RegUninstallReadme  | The name and repository path of the localized (translated) version of [README.md](https://github.com/dleidert/bde-lock/blob/master/README.md) | (yes)
 UserLanguageId      | Windows language ID (needs to be set correctly, but not translated) | **no**
 
 The most important string is `RegContextMenuEntry`. It is the one shown in the drive context menu to lock the drive.
+
+# Translating the projects README.md
+
+...

@@ -17,12 +17,16 @@ social:
   name: Daniel Leidert
   links:
     - https://github.com/dleidert/
+    - https://instagram.com/daniel.leidert/
 
 minima:
   social_links:
     github: dleidert
     instagram: daniel.leidert
     rss: rss
+
+github_username: dleidert
+instagram_username: daniel.leidert
 
 plugins:
  - jekyll-feed

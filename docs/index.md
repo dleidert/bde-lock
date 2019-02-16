@@ -17,7 +17,7 @@ To make it easier for fellow Windows users I decided to create [the bde-lock ins
 
 ## Usage
 
-The installer will add a ([localized](./translation)) string to the drive context menu function. The entry only appears for unlocked BitLocker encrypted drives except for the system drive. **Caution: The latter is currently hardcoded to the drive letter `C:` until a more generic approach is found. See also issue #1.**.
+The installer will add a ([localized](./translation)) string to the drive context menu function. The entry only appears for unlocked BitLocker encrypted drives except for the system drive. **Caution: The latter is currently hardcoded to the drive letter `C:` until a more generic approach is found. See also issue dleidert/bde-lock#1.**
 
 *image here*
 

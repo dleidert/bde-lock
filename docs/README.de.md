@@ -1,6 +1,6 @@
 [`English`](/README.md) | **`Deutsch`**
 
-# bde-lock
+# [bde-lock](https://dleidert.github.io/bde-lock)
 
 Einfacher Installer, der im Laufwerks-Kontextmenü einen Eintrag erzeugt, um ein unter Windows mit Bitlocker geschütztes entsperrtes Laufwerk zu sperren
 

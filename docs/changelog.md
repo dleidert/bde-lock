@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Changelog
+title: News
 description: Detailed changelog for the various bde-lock releases including links to compare the code differences between release versions
 ---
 

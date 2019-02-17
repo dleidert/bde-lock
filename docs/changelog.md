@@ -6,6 +6,10 @@ description: Detailed changelog for the various bde-lock releases including link
 
 # Changelog
 
+## bdelock 0.0.5 UNRELEASED ([changes](https://github.com/dleidert/bde-lock/compare/v0.0.4...master#files_bucket "Compare changes in master for upcoming release"))
+
+*
+
 ## [bdelock 0.0.4](https://github.com/dleidert/bde-lock/releases/tag/v0.0.4) ([changes](https://github.com/dleidert/bde-lock/compare/v0.0.3...v0.0.4#files_bucket "Compare changes between release versions 0.0.3 and 0.0.4"))
 
 * **Fix removal of Uninstall registry key**

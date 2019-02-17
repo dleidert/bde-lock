@@ -6,9 +6,11 @@ description: Detailed changelog for the various bde-lock releases including link
 
 # Changelog
 
-## bdelock 0.0.4 UNRELEASED ([changes](https://github.com/dleidert/bde-lock/compare/v0.0.3...master#files_bucket "Compare changes in master for upcoming release"))
+## [bdelock 0.0.4](https://github.com/dleidert/bde-lock/releases/tag/v0.0.4) ([changes](https://github.com/dleidert/bde-lock/compare/v0.0.3...v0.0.4#files_bucket "Compare changes between release versions 0.0.3 and 0.0.4"))
 
-*
+* **Fix removal of Uninstall registry key**
+* Let the installer calculate the estimated installation size
+* Documentation has been added at https://dleidert.github.io/bde-lock/ using [GitHub Pages and Jekyll](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/)
 
 ## [bdelock 0.0.3](https://github.com/dleidert/bde-lock/releases/tag/v0.0.3) ([changes](https://github.com/dleidert/bde-lock/compare/v0.0.2...v0.0.3#files_bucket "Compare changes between release versions 0.0.2 and 0.0.3"))
 

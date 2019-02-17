@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Homepage of the bde-lock project
+title: Home
 description: Documentation about bde-lock, a simple Windows installer to create a drive context menu entry to lock and unlocked BitLocker encrypted drive, and the registry keys it creates and the files it installs
 ---
 

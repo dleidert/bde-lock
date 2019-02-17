@@ -15,7 +15,7 @@
 !define CTXT_ENTRY    "lock-bde"
 
 !define REG_DRIVECTXT "Drive\shell\${CTXT_ENTRY}"
-!define REG_UNINSTALL "Software\Microsoft\Windows\CurrentVersion\Uninstall\bdelock"
+!define REG_UNINSTALL "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\bdelock"
 !define REG_BITLOCKER "SOFTWARE\Microsoft\Windows\CurrentVersion\BitLocker"
 
 # Variables
@@ -71,6 +71,9 @@ FunctionEnd
 Section
   SetOverwrite ifnewer
   SetOutPath "$INSTDIR"
+  ${If} ${RunningX64}
+  SetRegView 64
+  ${EndIf}
   File "script\bdelock.vbs"
   WriteUninstaller "$INSTDIR\${UNINSTALLER}"
   # registry context menu entries
@@ -104,9 +107,12 @@ SectionEnd
 
 # Uninstaller section
 Section "uninstall"
+  ${If} ${RunningX64}
+  SetRegView 64
+  ${EndIf}
+  DeleteRegKey HKCR "${REG_DRIVECTXT}"
   Delete "$INSTDIR\bdelock.vbs"
   Delete "$INSTDIR\${UNINSTALLER}"
   RMDir  "$INSTDIR"
-  DeleteRegKey HKCR "${REG_DRIVECTXT}"
   DeleteRegKey HKLM "${REG_UNINSTALL}"
 SectionEnd

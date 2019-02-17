@@ -67,13 +67,17 @@ Function .onInit
   ${EndIf} 
 FunctionEnd
 
+# onInit
+Function un.onInit
+  ${If} ${RunningX64}
+  SetRegView 64
+  ${EndIf}
+FunctionEnd
+
 # Default section
 Section
   SetOverwrite ifnewer
   SetOutPath "$INSTDIR"
-  ${If} ${RunningX64}
-  SetRegView 64
-  ${EndIf}
   File "script\bdelock.vbs"
   WriteUninstaller "$INSTDIR\${UNINSTALLER}"
   # registry context menu entries
@@ -107,9 +111,6 @@ SectionEnd
 
 # Uninstaller section
 Section "uninstall"
-  ${If} ${RunningX64}
-  SetRegView 64
-  ${EndIf}
   DeleteRegKey HKCR "${REG_DRIVECTXT}"
   Delete "$INSTDIR\bdelock.vbs"
   Delete "$INSTDIR\${UNINSTALLER}"

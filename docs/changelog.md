@@ -13,7 +13,7 @@ tags:
   - bde-lock
 ---
 
-# Changelog
+The following versions of `bde-lock` have been released:
 
 ## bdelock 0.0.5 UNRELEASED ([changes](https://github.com/dleidert/bde-lock/compare/v0.0.4...master#files_bucket "Compare changes in master for upcoming release"))
 

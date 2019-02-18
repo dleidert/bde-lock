@@ -1,7 +1,16 @@
 ---
 layout: default
 title: News
-description: Detailed changelog for the various bde-lock releases including links to compare the code differences between release versions
+description: >
+  Detailed changelog for the various bde-lock releases including links to compare
+  the code differences between release versions
+tags:
+  - changelog
+  - news
+  - changes
+  - bdelock
+  - lock-bde
+  - bde-lock
 ---
 
 # Changelog
@@ -35,5 +44,3 @@ This is still a beta version. The installer internals and localizations have bee
 ## [bdelock 0.0.1](https://github.com/dleidert/bde-lock/releases/tag/v0.0.1)
 
 This is a first beta release. This is untested on Windows Vista, 7 and 8 (32 and 64 bit)  and Windows 10 (32 bit) due to the lack of these operating systems. Please report any issues you find.
-
-[back](./)

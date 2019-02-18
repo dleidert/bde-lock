@@ -1,12 +1,28 @@
 ---
 layout: default
 title: Home
-description: Documentation about bde-lock, a simple Windows installer to create a drive context menu entry to lock and unlocked BitLocker encrypted drive, and the registry keys it creates and the files it installs
+description: >
+  Documentation about bde-lock, a simple Windows installer to create a
+  drive context menu entry to lock / re-lock an unlocked BitLocker
+  encrypted drive without the need to restart Windows, and the registry
+  keys and files it creates or installs
+tags:
+  - bdelock
+  - bde-lock
+  - lock-bde
+  - bde
+  - bitlocker
+  - relock
+  - unlocked
+  - windows
+  - installer
+  - lock drive
+  - re-lock drive
 ---
 
 # bde-lock
 
-`bde-lock` - simple [Windows installer](https://github.com/dleidert/bde-lock/releases/latest) to create a drive context menu entry to lock an unlocked BitLocker encrypted drive
+`bde-lock` - simple [Windows installer](https://github.com/dleidert/bde-lock/releases/latest) to create a drive context menu entry to lock an unlocked BitLocker encrypted drive without the need to restart Windows
 
 ## Download and Installation
 

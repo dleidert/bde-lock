@@ -47,4 +47,3 @@ The installer will add a ([localized](./translation "Helping translate the bde-l
 
 Go to the Windows `Control panel > Programs > Uninstall program` and choose to uninstall `Bitlocker Drive Locker`.
 
-<!-- {{ jekyll.environment }} {{ page.last_modified_at }} -->

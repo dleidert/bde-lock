@@ -1,7 +1,7 @@
 ---
 layout: page
 shorttitle: About
-title: About the bde-lock project and its author
+title: About the project and its author
 description: >
   Provides some more detailed information regarding the issue, to lock / re-lock
   an unlocked BitLocker encrypted drive without having to restart the system,

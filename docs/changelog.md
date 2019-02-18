@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: News
 description: >
   Detailed changelog for the various bde-lock releases including links to compare

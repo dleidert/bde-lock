@@ -2,8 +2,8 @@
 layout: page
 title: News
 description: >
-  Detailed changelog for the various bde-lock releases including links to compare
-  the code differences between release versions
+  Detailed changelog and news for the various bde-lock releases including
+  links to compare the code differences between released installer versions
 tags:
   - changelog
   - news
@@ -11,6 +11,9 @@ tags:
   - bdelock
   - lock-bde
   - bde-lock
+  - release
+  - releases
+  - installer
 ---
 
 The following versions of `bde-lock` have been released:

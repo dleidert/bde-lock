@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: About
 description: >
   About the bde-lock project and its author(s)
@@ -10,7 +10,7 @@ tags:
   - project description
 ---
 
-# About the project
+## About the project
 
 In Windows a manually or automatically unlocked BitLocker encrypted drive stays unlocked until the system is restarted. This is not optimal for everybody, especially if the drive in question holds sensible data, which should only be unlocked for a specific event and then be locked afterwards again. For example: Some backup is stored on an encrypted drive. The drive gets unlocked to update the backup copy. As soon as the update is complete, there is no further need for this drive to stay unlocked.
 
@@ -26,7 +26,7 @@ Several solutions have been suggested, using the command shell or tasks or addin
 
 To make it easier for fellow Windows users I decided to create [the bde-lock installer](https://github.com/dleidert/bde-lock/releases/latest), which will create all [required registry keys for the context menu entry](./registry-keys) and install a [small script to perform the lock task with the required permissions](./manage-bde). The installer will also provide an uninstaller, which will remove all created registry keys and all installed files.
 
-# About the author
+## About the author
 
 ...
 

@@ -1,10 +1,24 @@
 ---
-layout: default
+layout: page
 title: Translation
-description: how to contribute translations to the bde-lock installer, which will appear in the context menu, the Windows control panel and the installer itself
+description: >
+  How to contribute translations to the bde-lock installer,
+  which will appear in the context menu, the Windows control
+  panel, the installer or the documentation
+tags:
+  - uninstall
+  - uninstallation
+  - deinstall
+  - deinstalllation
+  - i180n
+  - l10n
+  - internationalization
+  - localization
+  - translation
+  - translate
+  - language
+  - documentation
 ---
-
-# Translating the installer and context menu
 
 The installer is localized. This means, that the installer itself, the context menu entry and the entry in the Windows control panel can be translated. This page tries to explain, how to contribute new translations, and to give some more context to the strings to translate.
 

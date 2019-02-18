@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Windows registry-keys created by bde-lock
 description: >
   Description of all registry keys, which are created by the bde-lock installer
@@ -13,7 +13,7 @@ tags:
   - drive
 ---
 
-# Windows registry-keys created by bde-lock
+This page is about the Windows registry-keys created by `bde-lock`.
 
 ## Drive context menu function
 

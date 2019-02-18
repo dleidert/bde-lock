@@ -1,10 +1,26 @@
 ---
 layout: default
-title: usage of manage-bde and  and to lock an encrypted drive
-description:
-lang: en
+title: Usage of manage-bde to lock an encrypted drive
+description: >
+  This page describes ...
+tags:
+  - manage-bde.exe
+  - manage-bde
+  - bde
+  - Lock-Bitlocker
+  - forcedismount
+  - lock
 ---
 
-# Use manage-bde via command or powershell
+## Usage of `manage-bde.exe` via command shell
 
+...
+
+[`manage-bde.exe`](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/manage-bde)
+
+## Usage of `Lock-BitLocker` via powershell
+
+...
+
+[`Lock-BitLocker`](https://docs.microsoft.com/en-us/powershell/module/bitlocker/lock-bitlocker?view=win10-ps)
 

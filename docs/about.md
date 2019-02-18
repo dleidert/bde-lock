@@ -3,7 +3,10 @@ layout: page
 shorttitle: About
 title: About the bde-lock project and its author
 description: >
-  About the bde-lock project and its author(s)
+  Provides some more detailed information regarding the issue, to lock / re-lock
+  an unlocked BitLocker encrypted drive without having to restart the system,
+  and explains, how the drive context menu function to lock the drive is created
+  by the installer.
 tags:
   - bde-lock
   - windows

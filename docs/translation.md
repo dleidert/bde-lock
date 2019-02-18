@@ -3,18 +3,19 @@ layout: page
 shorttitle: Translation
 title: Helping translate the installer and context menu entry
 description: >
-  How to contribute translations to the bde-lock installer,
-  which will appear in the context menu, the Windows control
-  panel, the installer or the documentation
+  The installer and the context menu entry are localized. To contribute a translation
+  to the bde-lock installer, the context menu, the Windows (Uninstall Programs) control
+  panel or the documentation follow these steps and help your fellow Windows users.
 tags:
   - uninstall
   - uninstallation
   - deinstall
   - deinstalllation
-  - i180n
+  - i18n
   - l10n
   - internationalization
   - localization
+  - localize
   - translation
   - translate
   - language

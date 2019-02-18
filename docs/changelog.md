@@ -4,7 +4,9 @@ shorttitle: News
 title: Changelog and Release News
 description: >
   Detailed changelog and news for the various bde-lock releases including
-  links to compare the code differences between released installer versions
+  links to compare the code differences between released installer versions.
+  The latest stable release is bdelock 0.0.4, which fixes the removal
+  of the Uninstall registry key.
 tags:
   - changelog
   - news

@@ -1,6 +1,6 @@
 ---
 layout: page
-short_title: News
+shorttitle: News
 title: Changelog and Release News
 description: >
   Detailed changelog and news for the various bde-lock releases including

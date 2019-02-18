@@ -1,6 +1,6 @@
 ---
 layout: home
-short_title: Blog
+shorttitle: Blog
 title: bde-lock Blog
 description: Blog posts about bde-lock
 ---

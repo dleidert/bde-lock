@@ -1,6 +1,6 @@
 ---
 layout: page
-short_title: Home
+shorttitle: Home
 title: Lock unlocked BitLocker encrypted drives
 description: >
   Documentation about bde-lock, a simple Windows installer to create a

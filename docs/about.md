@@ -1,6 +1,6 @@
 ---
 layout: page
-short_title: About
+shorttitle: About
 title: About the bde-lock project and its author
 description: >
   About the bde-lock project and its author(s)

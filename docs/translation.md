@@ -1,6 +1,6 @@
 ---
 layout: page
-short_title: Translation
+shorttitle: Translation
 title: Helping translate the installer and context menu entry
 description: >
   How to contribute translations to the bde-lock installer,

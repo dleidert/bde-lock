@@ -1,6 +1,7 @@
 ---
 layout: page
-title: About
+short_title: About
+title: About the bde-lock project and its author
 description: >
   About the bde-lock project and its author(s)
 tags:

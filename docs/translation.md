@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Translation
+short_title: Translation
+title: Helping translate the installer and context menu entry
 description: >
   How to contribute translations to the bde-lock installer,
   which will appear in the context menu, the Windows control

@@ -1,6 +1,7 @@
 ---
 layout: page
-title: News
+short_title: News
+title: Changelog and Release News
 description: >
   Detailed changelog and news for the various bde-lock releases including
   links to compare the code differences between released installer versions

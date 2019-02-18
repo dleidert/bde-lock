@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Home
 description: >
   Documentation about bde-lock, a simple Windows installer to create a
@@ -19,8 +19,6 @@ tags:
   - lock drive
   - re-lock drive
 ---
-
-# bde-lock
 
 `bde-lock` - simple [Windows installer](https://github.com/dleidert/bde-lock/releases/latest) to create a drive context menu entry to lock an unlocked BitLocker encrypted drive without the need to restart Windows
 

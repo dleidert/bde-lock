@@ -20,6 +20,7 @@ tags:
   - translate
   - language
   - documentation
+comments: true
 ---
 
 The installer is localized. This means, that the installer itself, the context menu entry and the entry in the Windows control panel can be translated. This page tries to explain, how to contribute new translations, and to give some more context to the strings to translate.

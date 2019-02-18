@@ -67,7 +67,7 @@ Function .onInit
     OK:
   ${EndIf}
   ClearErrors
-  ReadEnvStr $R0 SystemDrivesss
+  ReadEnvStr $R0 SystemDrive
   ${If} ${Errors}
     MessageBox MB_OK "Error getting system drive letter from %SystemDrive%"
     StrCpy $SystemDrive "C:"

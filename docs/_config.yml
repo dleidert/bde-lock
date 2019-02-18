@@ -38,6 +38,7 @@ rss: rss
 
 plugins:
  - jekyll-feed
- - jekyll-seo-tag
  - jekyll-paginate
+ - jekyll-redirect-from
+ - jekyll-seo-tag
  - jekyll-sitemap

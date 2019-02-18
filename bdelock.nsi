@@ -19,6 +19,7 @@
 !define REG_BITLOCKER "SOFTWARE\Microsoft\Windows\CurrentVersion\BitLocker"
 
 # Variables
+Var SystemDrive
 
 # Installer configuration
 CRCCheck on
@@ -64,7 +65,15 @@ Function .onInit
     CANCEL:
       Quit
     OK:
-  ${EndIf} 
+  ${EndIf}
+  ClearErrors
+  ReadEnvStr $R0 SystemDrivesss
+  ${If} ${Errors}
+    MessageBox MB_OK "Error getting system drive letter from %SystemDrive%"
+    StrCpy $SystemDrive "C:"
+  ${Else}
+    StrCpy $SystemDrive "$R0"
+  ${EndIf}
 FunctionEnd
 
 # onInit
@@ -83,7 +92,7 @@ Section
   # registry context menu entries
   # TODO: test for key!
   WriteRegStr HKCR "${REG_DRIVECTXT}" ""                  "$(RegContextMenuEntry)"
-  WriteRegStr HKCR "${REG_DRIVECTXT}" "AppliesTo"         "(System.Volume.BitLockerProtection:=1 OR System.Volume.BitLockerProtection:=3 OR System.Volume.BitLockerProtection:=5) AND NOT C:"
+  WriteRegStr HKCR "${REG_DRIVECTXT}" "AppliesTo"         "(System.Volume.BitLockerProtection:=1 OR System.Volume.BitLockerProtection:=3 OR System.Volume.BitLockerProtection:=5) AND NOT $SystemDrive"
   WriteRegStr HKCR "${REG_DRIVECTXT}" "HasLUAShield"      ""
   WriteRegStr HKCR "${REG_DRIVECTXT}" "MultiSelectModel"  "Single"
   # registry context menu command

@@ -3,11 +3,11 @@ layout: page
 shorttitle: Home
 title: BitLocker Drive Locker - Lock unlocked BitLocker encrypted drives via drive context menu
 description: >
-  Documentation about the bde-lock project, a simple Windows installer to create a
-  drive context menu entry to lock / re-lock an unlocked BitLocker encrypted drive
-  without the need to restart Windows. The installer creates the necessary registry
-  keys and installs a small script. If uninstalled, it will also remove all
-  created or installed content.
+  Documentation about the bde-lock project, a simple Windows installer, which adds
+  'Bitlocker Lock drive' to the drive context menu entry to lock / re-lock an unlocked
+  BitLocker encrypted drive without the need to restart the Windows system. The
+  installer creates the necessary registry keys and installs a small script. If
+  uninstalled, it will also remove all created and installed content.
 tags:
   - bdelock
   - bde-lock

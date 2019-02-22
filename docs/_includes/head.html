@@ -18,6 +18,6 @@
   {% if page.extra_json -%}
     {%- for json_file in page.extra_json -%}
       <script src="{{ "/assets/json/" | append: json_file | relative_url }}" type="application/ld+json"></script>
-    {% endfor %}
+    {%- endfor -%}
   {%- endif %}
 </head>

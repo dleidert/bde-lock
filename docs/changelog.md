@@ -18,21 +18,26 @@ tags:
   - installer
 ---
 
-These are the latest versions of `bde-lock` which have been released. For a complete list of all releases, please visit [https://github.com/dleidert/bde-lock/releases].
+These are the latest versions of `bde-lock` which have been released. For a complete list of all releases and changes please visit https://github.com/dleidert/bde-lock/releases.
 
-## bdelock 0.0.5 UNRELEASED ([changes](https://github.com/dleidert/bde-lock/compare/v0.0.4...master#files_bucket "Compare changes in master for upcoming release"))
+## [bdelock 0.0.5](https://github.com/dleidert/bde-lock/tree/master/)
+
+<time>Unreleased</time> ([compare changes to last release](https://github.com/dleidert/bde-lock/compare/v0.0.4...master#files_bucket "Compare changes in master for upcoming release"))
 
 * Determine system drive letter during installation
 * 
 
 ## [bdelock 0.0.4](https://github.com/dleidert/bde-lock/releases/tag/v0.0.4)
-### Released <time datetime="2019-02-17">Feb. 19th 2019</time>, [compare changes](https://github.com/dleidert/bde-lock/compare/v0.0.3...v0.0.4#files_bucket "Compare changes between release versions 0.0.3 and 0.0.4")
+
+Released <time datetime="2019-02-17">Feb. 19th 2019</time> ([compare changes to previous release](https://github.com/dleidert/bde-lock/compare/v0.0.3...v0.0.4#files_bucket "Compare changes between release versions 0.0.3 and 0.0.4"))
 
 * **Fix removal of Uninstall registry key**
 * Let the installer calculate the estimated installation size
 * Documentation has been added at https://dleidert.github.io/bde-lock/ using [GitHub Pages and Jekyll](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/)
 
-## <time datetime="2019-02-14">Feb. 14th 2019</time> [bdelock 0.0.3](https://github.com/dleidert/bde-lock/releases/tag/v0.0.3) ([changes](https://github.com/dleidert/bde-lock/compare/v0.0.2...v0.0.3#files_bucket "Compare changes between release versions 0.0.2 and 0.0.3"))
+## [bdelock 0.0.3](https://github.com/dleidert/bde-lock/releases/tag/v0.0.3)
+
+Released <time datetime="2019-02-14">Feb. 14th 2019</time> ([compare changes to previous release](https://github.com/dleidert/bde-lock/compare/v0.0.2...v0.0.3#files_bucket "Compare changes between release versions 0.0.2 and 0.0.3"))
 
 * Added Changelog
 * Changed source file encoding to UTF-8
@@ -40,7 +45,9 @@ These are the latest versions of `bde-lock` which have been released. For a comp
 * Improved documentation including link fixes
 * Localized README added for German
 
-## <time datetime="2019-02-09">Feb. 9th 2019</time> [bdelock 0.0.2](https://github.com/dleidert/bde-lock/releases/tag/v0.0.2) ([changes](https://github.com/dleidert/bde-lock/compare/v0.0.1...v0.0.2 "Compare changes between release versions 0.0.1 and 0.0.2"))
+## [bdelock 0.0.2](https://github.com/dleidert/bde-lock/releases/tag/v0.0.2)
+
+Released  <time datetime="2019-02-09">Feb. 9th 2019</time> ([compare changes to previous release](https://github.com/dleidert/bde-lock/compare/v0.0.1...v0.0.2 "Compare changes between release versions 0.0.1 and 0.0.2"))
 
 This is still a beta version. The installer internals and localizations have been polished. Further the installer now tests for the Windows version and the presence of Bitlocker. Please report any issues.
 

@@ -18,10 +18,10 @@ header_pages:
   - changelog.md
   - translation.md
 
-seo:
-  type: SoftwareApplication
-  links:
-    - https://github.com/dleidert/
+#seo:
+#  type: SoftwareApplication
+#  links:
+#    - https://github.com/dleidert/
 
 social:
   name: Daniel Leidert

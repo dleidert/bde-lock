@@ -14,7 +14,6 @@ excerpt_separator: <!-- excerpt -->
 
 header_pages:
   - index.md
-  - about.md
   - posts.md
   - changelog.md
   - translation.md

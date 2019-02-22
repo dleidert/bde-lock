@@ -17,7 +17,9 @@
   {%- endif %}
   {% if page.extra_json -%}
     {%- for json_file in page.extra_json -%}
-      <script src="{{ "/assets/json/" | append: json_file | relative_url }}" type="application/ld+json"></script>
+<script type="application/ld+json">
+{% include json/{{ json_file }} %}
+</script>
     {%- endfor -%}
   {%- endif %}
 </head>

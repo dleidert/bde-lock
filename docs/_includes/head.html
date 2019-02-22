@@ -15,7 +15,9 @@
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif %}
-  {%- for header_file in page.extra_headers %}
-    {% include header_file %}
-  {% endfor %}
+  {% if page.extra_json -%}
+    {%- for json_file in page.extra_json -%}
+      <script src="/assets/json/{{ json_file }}" type="application/ld+json"></script>
+    {% endfor %}
+  {%- endif %}
 </head>

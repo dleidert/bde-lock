@@ -24,7 +24,7 @@ The following keys add an entry to the drive context menu and connect it with a 
 Entry | Type | Explanation | Value | Localized
 ------|------|-------------|-------|----------
 `(Default)` | `REG\_SZ` | Name of the context menu entry | [`Bitlocker Lock Drive`](/locale/en.nsh#L18) | yes
-`AppliesTo` | `REG\_SZ` | Rule, when the entry should be displayed *The system drive letter is determined during installation* | [`(System.Volume.BitLockerProtection:=1 OR System.Volume.BitLockerProtection:=3 OR System.Volume.BitLockerProtection:=5) AND NOT C:`](/bdelock.nsi#L77) | no
+`AppliesTo` | `REG\_SZ` | Rule, when the entry should be displayed <br/><br/> *The system drive letter is determined during installation* | [`(System.Volume.BitLockerProtection:=1 OR System.Volume.BitLockerProtection:=3 OR System.Volume.BitLockerProtection:=5) AND NOT C:`](/bdelock.nsi#L77) | no
 `HasLUAShield` | `REG\_SZ` | Adds [UAC shield icon](https://docs.microsoft.com/en-us/windows/desktop/uxguide/winenv-uac#uac-shield-icon) to entry | *(empty)* | no
 `MultiSelectModel` | `REG\_SZ` | Specify the [selection model](https://docs.microsoft.com/en-us/windows/desktop/shell/how-to-employ-the-verb-selection-model) | `Single` | no
 

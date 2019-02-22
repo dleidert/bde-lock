@@ -25,7 +25,8 @@ These are the latest versions of `bde-lock` which have been released. For a comp
 * Determine system drive letter during installation
 * 
 
-## <time datetime="2019-02-17">Feb. 19th 2019</time> [bdelock 0.0.4](https://github.com/dleidert/bde-lock/releases/tag/v0.0.4) ([changes](https://github.com/dleidert/bde-lock/compare/v0.0.3...v0.0.4#files_bucket "Compare changes between release versions 0.0.3 and 0.0.4"))
+## [bdelock 0.0.4](https://github.com/dleidert/bde-lock/releases/tag/v0.0.4)
+### Released <time datetime="2019-02-17">Feb. 19th 2019</time>, [compare changes](https://github.com/dleidert/bde-lock/compare/v0.0.3...v0.0.4#files_bucket "Compare changes between release versions 0.0.3 and 0.0.4")
 
 * **Fix removal of Uninstall registry key**
 * Let the installer calculate the estimated installation size

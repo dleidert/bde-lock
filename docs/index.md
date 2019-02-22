@@ -66,15 +66,13 @@ The installer can be used on all Windows versions providing BitLocker: Windows V
 
 ### Supported languages
 
-Currently English and German are supported, but [adding translations is quite easy](/translation).
+Currently English and German are supported, but [adding translations is quite easy](./translation).
 
 ## Usage
 
 The installer will add a ([localized entry](./translation "Helping translate the bde-lock installer")) `Bitlocker Lock Drive` to the drive context menu. The function is only available for unlocked BitLocker encrypted drives except for the system drive.
 
-Currently English and German are supported, but adding translations is quite easy. 
-
-**Caution:** Since release 0.0.5 the latter is hardcoded to the drive letter found by reading the `%SystemDrive%` environment variable during installation (since release 0.0.5). In earlier versions the system drive was wired to the drive letter `C:`. A more generic approach is currently on the todo list, see also issue [#1](https://github.com/dleidert/bde-lock/issues/1).
+**Caution:** Since release 0.0.5 the system drive letter is hardcoded in the [registry](./registry-keys#hkcrdriveshelllock-bde) to the drive letter found by reading the `%SystemDrive%` environment variable during installation. In earlier versions the system drive was wired to the drive letter `C:`. A more generic approach is currently on the todo list, see also issue [#1](https://github.com/dleidert/bde-lock/issues/1).
 
 *image here*
 

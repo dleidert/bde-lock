@@ -8,6 +8,7 @@ tags:
   - v0.0.3
   - pre-release
 comments: true
+seo.type: BlogPosting
 ---
 
 ## Released bde-lock version 0.0.3

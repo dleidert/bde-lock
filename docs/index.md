@@ -35,6 +35,8 @@ extra_json:
 
 * [About](#about "About the bde-lock project")
 * [Download and Installation](#download-and-installation "Download and installation instructions")
+    * [Supported Windows versions](#supported-windows-versions)
+    * [Supported languages](#supported-languages)
 * [Usage](#usage "Usage information and screenshot")
 * [Uninstallation](#uninstallation "Uninstallation hints")
 
@@ -58,9 +60,19 @@ To make it easier for fellow Windows users I decided to create [the bde-lock ins
 
 Get the [latest installer](https://github.com/dleidert/bde-lock/releases/latest "Link to the latest bde-lock installer release") and install it. The installation requires elevated permissions as Administrator.
 
+### Supported Windows versions
+
+The installer can be used on all Windows versions providing BitLocker: Windows Vista, Windows 7, Windows 8 / 8.1 and Windows 10.
+
+### Supported languages
+
+Currently English and German are supported, but [adding translations is quite easy](/translation).
+
 ## Usage
 
 The installer will add a ([localized entry](./translation "Helping translate the bde-lock installer")) `Bitlocker Lock Drive` to the drive context menu. The function is only available for unlocked BitLocker encrypted drives except for the system drive.
+
+Currently English and German are supported, but adding translations is quite easy. 
 
 **Caution:** Since release 0.0.5 the latter is hardcoded to the drive letter found by reading the `%SystemDrive%` environment variable during installation (since release 0.0.5). In earlier versions the system drive was wired to the drive letter `C:`. A more generic approach is currently on the todo list, see also issue [#1](https://github.com/dleidert/bde-lock/issues/1).
 

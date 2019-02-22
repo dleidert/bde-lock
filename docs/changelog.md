@@ -25,7 +25,7 @@ The following versions of `bde-lock` have been released:
 
 *
 
-## [bdelock 0.0.4](https://github.com/dleidert/bde-lock/releases/tag/v0.0.4) ([changes](https://github.com/dleidert/bde-lock/compare/v0.0.3...v0.0.4#files_bucket "Compare changes between release versions 0.0.3 and 0.0.4"))
+## <date datetime="2019-02-17">Feb. 2nd 2019</date> [bdelock 0.0.4](https://github.com/dleidert/bde-lock/releases/tag/v0.0.4) ([changes](https://github.com/dleidert/bde-lock/compare/v0.0.3...v0.0.4#files_bucket "Compare changes between release versions 0.0.3 and 0.0.4"))
 
 * **Fix removal of Uninstall registry key**
 * Let the installer calculate the estimated installation size

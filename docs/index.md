@@ -28,7 +28,7 @@ tags:
   - installation
   - uninstallation
 extra_json:
-  - SoftwareApplication.json
+  - softwareapplication.json
 ---
 
 `bde-lock` - BitLocker drive locker - simple [Windows installer](https://github.com/dleidert/bde-lock/releases/latest) to create a drive context menu entry to lock an unlocked BitLocker encrypted drive without the need to restart Windows

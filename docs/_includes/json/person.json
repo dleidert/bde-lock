@@ -1,0 +1,18 @@
+{%- assign social = site.minima.social_links -%}
+{
+  "@context": "http://schema.org/",  
+  "@type": "Person",
+  "name": {{ site.author }},
+  "email": "mailto:{{ site.email }}",
+  "nationality": "German",
+  "url": "http://www.wgdd.de",
+  "sameAs": [
+    "https://qa.debian.org/developer.php?login={{ site.debian_username | default: social.debian | cgi_escape | escape }}@debian.org",
+    "https://salsa.debian.org/{{ site.debian_username | default: social.debian | cgi_escape | escape }}@",
+    "https://github.com/{{ site.github_username | default: social.github | cgi_escape | escape }}",
+    "https://instagram.com/{{ site.instagram_username | default: social.instagram | cgi_escape | escape }}",
+    "https://www.xing.com/profile/{{ site.xing_username | default: social.xing | cgi_escape | escape }}",
+    "https://m.youtube.com/channel/{{ site.youtube_username | default: social.youtube_channel | cgi_escape | escape }}",
+    "https://{{ site.github_username | default: social.github | cgi_escape | escape }}.github.io",
+    "{site.baseurl}"
+}

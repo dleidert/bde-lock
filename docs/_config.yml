@@ -38,11 +38,16 @@ minima:
     github: dleidert
     instagram: daniel.leidert
     youtube_channel: UCcByb2fCTx7B8QwZBdGxDgA
+    xing: Daniel_Leidert
+    debian: dleidert
     rss: rss
 
 # minima 2.5.0
 github_username: dleidert
 instagram_username: daniel.leidert
+youtube_username: UCcByb2fCTx7B8QwZBdGxDgA
+xing_username: Daniel_Leidert
+debian_username: dleidert
 rss: rss
 
 plugins:

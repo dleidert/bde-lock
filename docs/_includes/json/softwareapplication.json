@@ -11,11 +11,5 @@
   "releaseNotes": "https://dleidert.github.io/bde-lock/changelog",
   "license": "https://raw.githubusercontent.com/dleidert/bde-lock/master/LICENSE",
   "url": "https://dleidert.github.io/bde-lock/",
-  "author": {
-    "@type": "Person",
-    "email": "mailto:daniel.leidert@wgdd.de",
-    "name": "Daniel Leidert",
-    "nationality": "German",
-    "url": "https://github.com/dleidert/"
-  }
+  "author": {% include json/person.json %}
 }

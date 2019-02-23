@@ -40,6 +40,7 @@ minima:
     youtube_channel: UCcByb2fCTx7B8QwZBdGxDgA
     xing: Daniel_Leidert
     debian: dleidert
+    gnupg: 0xF11F9DE2C296D05D
     rss: rss
 
 # minima 2.5.0
@@ -48,6 +49,7 @@ instagram_username: daniel.leidert
 youtube_username: UCcByb2fCTx7B8QwZBdGxDgA
 xing_username: Daniel_Leidert
 debian_username: dleidert
+gnupg_key: 0xF11F9DE2C296D05D
 rss: rss
 
 plugins:

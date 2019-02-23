@@ -13,7 +13,6 @@
     "https://instagram.com/{{ site.instagram_username | default: social.instagram | cgi_escape | escape }}",
     "https://www.xing.com/profile/{{ site.xing_username | default: social.xing | cgi_escape | escape }}",
     "https://m.youtube.com/channel/{{ site.youtube_username | default: social.youtube_channel | cgi_escape | escape }}",
-    "https://{{ site.github_username | default: social.github | cgi_escape | escape }}.github.io",
-    "{{ site.url }}/{{ site.baseurl }}"
+    "{{ site.url }}"
   ]
 }

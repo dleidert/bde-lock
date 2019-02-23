@@ -2,7 +2,7 @@
 {
   "@context": "http://schema.org/",  
   "@type": "Person",
-  "name": {{ site.author }},
+  "name": "{{ site.author }}",
   "email": "mailto:{{ site.email }}",
   "nationality": "German",
   "url": "http://www.wgdd.de",

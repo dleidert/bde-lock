@@ -1,4 +1,4 @@
-{% assign release = site.github.latest_release %}
+{%- assign release = site.github.latest_release -%}
 {
   "@context": "http://schema.org/",
   "@type": "SoftwareApplication",

@@ -33,7 +33,7 @@ Unreleased ([compare changes to last release]({{ site.github.repository_url }}/c
 
 ## [{{ release.name }}]({{ release.html_url }}) {% if release.prerelease -%}(pre-release){%- endif %}
 
-Released <time datetime="{{ release.published_at }}">{{ release.published_at | date_to_string }}</time>
+Released <time datetime="{{ release.published_at | date_to_xmlschema }}">{{ release.published_at | date_to_string }}</time>
 {% unless release.tag_name == "v0.0.1" -%}
 ([compare changes to previous release]({{ site.github.repository_url }}/compare/{{ releases[forloop.index].tag_name }}...{{ release.tag_name }}#files_bucket "Compare changes between release versions {{ releases[forloop.index].tag_name }} and {{ release.tag_name }}"))
 {%- endunless %}

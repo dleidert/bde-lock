@@ -16,7 +16,7 @@ sitemap: false
 <!--
 {% assign releases = site.github.releases | sort: "tag_name" | reverse %}
 {% for release in releases limit:3 %}
-{{ release.tag_name }} + {{ release[forloop.index].tag_name }}
+{{ release.tag_name }} + {{ forloop.index }} + {{ releases[forloop.index].tag_name }}
 {% endfor %}
 
 -->

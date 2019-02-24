@@ -5,9 +5,15 @@ sitemap: false
 ---
 
 <!--
-1{{ site.github.latest_release.body | replace: '\', '\\' }}
+1{{ site.github.latest_release.body | replace: "\", "\\" }}
 2{{ site.github.latest_release.body | xml_escape }}
 3{{ site.github.latest_release.body | xml_escape | escape }}
+-->
+
+<!--
+{% assign foo = site.github.latest_release.assets | where "content_type", "application/x-msdownload" %}
+result: foo[0].browser_download_url
+result: foo.browser_download_url
 -->
 
 <!--

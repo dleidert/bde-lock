@@ -5,6 +5,11 @@ sitemap: false
 ---
 
 <!--
+{{ site.github.latest_release.body | url_encode }}
+{{ site.github.latest_release.body | cgi_escape }}
+-->
+
+<!--
   {% assign asset = site.github.latest_release.assets %}
   inspect: {{ asset | inspect }}
 

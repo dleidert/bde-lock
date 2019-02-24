@@ -63,7 +63,7 @@ Get the [latest installer]({{ site.github.latest_release.assets[0].browser_downl
 
 ### Latest release
 
-The latest release is [{{ site.github.latest_release.assets[0].name }}]({{ site.github.latest_release.assets[0].browser_download_url }}).
+The latest release is [{{ site.github.latest_release.name }}]({{ site.github.latest_release.assets[0].browser_download_url }}).
 
 {{ site.github.latest_release.body | markdownify }}
 

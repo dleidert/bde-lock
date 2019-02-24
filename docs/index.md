@@ -60,9 +60,7 @@ To make it easier for fellow Windows users I decided to create [the bde-lock ins
 
 {% assign current = site.github.latest_release -%}
 
-Get the [current installer]({{ current.assets[0].browser_download_url }} "Download the latest released bde-lock installer {{ current.assets[0].name }}") and install it. The installation requires elevated permissions as Administrator.
-
-The current release is [{{ current.name }}]({{ current.html_url }}) published on <time datetime="{{ current.published_at | date_to_xmlschema }}">{{ current.published_at | date_to_string }}</time>.
+[Download the installer]({{ current.assets[0].browser_download_url }} "Download the latest released bde-lock installer {{ current.assets[0].name }}") and execute it. _The installation requires elevated permissions as Administrator!_ The current release is [{{ current.name }}]({{ current.html_url }}) published on <time datetime="{{ current.published_at | date_to_xmlschema }}">{{ current.published_at | date_to_string }}</time>.
 
 {{ current.body }}
 

@@ -24,7 +24,7 @@ These are the latest versions of `bde-lock` which have been released. For a comp
 
 ## [bdelock UNRELEASED]({{ site.github.repository_url }}/tree/master/)
 
-<time>Unreleased</time> ([compare changes to last release](https://github.com/dleidert/bde-lock/compare/{{ releases[0].tag_name }}...master#files_bucket "Compare changes in master for upcoming release"))
+<time>Unreleased</time>&nbsp;([compare changes to last release](https://github.com/dleidert/bde-lock/compare/{{ releases[0].tag_name }}...master#files_bucket "Compare changes in master for upcoming release"))
 
 * Determine system drive letter during installation
 * 

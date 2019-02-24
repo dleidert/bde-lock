@@ -5,7 +5,7 @@ sitemap: false
 ---
 
 <!--
-{{ site.github.latest_release.body | url_encode }}
+{{ site.github.latest_release.body | replace: '\', '\\' }}
 {{ site.github.latest_release.body | cgi_escape }}
 -->
 

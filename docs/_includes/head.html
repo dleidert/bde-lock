@@ -26,11 +26,14 @@
     {%- endfor -%}
   {%- endif %}
 <!--
-  {%- assign asset = site.github.latest_release.assets -%}
+  {% assign asset = site.github.latest_release.assets %}
+  inspect: {{ asset | inspect }}
 
   url1: {{ asset.url }}, {{ asset.browser_download_url }}
 
   url2: {{ site.github.latest_release.assets.url }}, {{ site.github.latest_release.assets.browser_download_url }}
+
+  {{ site.github.releases_url }}/download/latest/bdelock-{{ site.github.latest_release.tag_name | strip | | remove: "v" }}-setup.exe
 
   tag_name: {{ site.github.latest_release.tag_name }}
 

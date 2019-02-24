@@ -1,16 +1,32 @@
+{% assign release = site.github.latest_release %}
 {
   "@context": "http://schema.org/",
   "@type": "SoftwareApplication",
   "name": "bde-lock",
+  "softwareVersion": "{{ release.tag_name | strip | remove: 'v' }}",
   "alternateName": "bdelock",
+  "alternateName": "{{ release.name }}",
   "description": "simple Windows installer to create a drive context menu entry to lock an unlocked BitLocker encrypted drive",
   "applicationCategory": "System",
   "inLanguage": ["en", "de"],
-  "operatingSystem": "Windows 7, Windows 8, Windows 8.1, Windows 10",
-  "downloadUrl": "{{ site.github.releases_url }}/latest/",
-  "releaseNotes": "https://dleidert.github.io/bde-lock/changelog",
+  "operatingSystem": [
+    "Windows",
+    "Windows Vista",
+    "Windows 7",
+    "Windows 8",
+    "Windows 8.1",
+    "Windows 10"
+  ],
+  "downloadUrl": "{{ release.assets[0].browser_download_url }}",
+  "fileSize": "{{ release.assets[0].size | divided_by: 1024 }}",
+  "releaseNotes": [
+    "{{ release.body }}",
+    "{{ release.html_url }}"
+  ],
   "license": "https://raw.githubusercontent.com/dleidert/bde-lock/master/LICENSE",
-  "url": "https://dleidert.github.io/bde-lock/",
+  "url": "{{ site.github.repository_url }}",
+  "datePublished": "{{ release.published_at }}",
+  "dateCreated": "{{ release.created_at }}",
   "author": {%- include json/person.json -%},
   "publisher": {%- include json/person.json -%}
 }

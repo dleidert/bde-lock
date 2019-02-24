@@ -63,9 +63,11 @@ Get the [latest installer]({{ site.github.latest_release.assets[0].browser_downl
 
 ### Latest release
 
-The latest release is [{{ site.github.latest_release.name }}]({{ site.github.latest_release.assets[0].browser_download_url }}).
+The latest release is [{{ site.github.latest_release.name }}]({{ site.github.latest_release.html_url }}).
 
 {{ site.github.latest_release.body | markdownify }}
+
+For a more complete changelog either visit the [News page](./changelog) or the [projects release site]({{ site.github.releases_url }}).
 
 ### Supported Windows versions
 

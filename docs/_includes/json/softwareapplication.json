@@ -4,8 +4,10 @@
   "@type": "SoftwareApplication",
   "name": "bde-lock",
   "softwareVersion": "{{ release.tag_name | strip | remove: 'v' }}",
-  "alternateName": "bdelock",
-  "alternateName": "{{ release.name }}",
+  "alternateName": [
+    "bdelock",
+    "{{ release.name }}"
+  ],
   "description": "simple Windows installer to create a drive context menu entry to lock an unlocked BitLocker encrypted drive",
   "applicationCategory": "System",
   "inLanguage": ["en", "de"],

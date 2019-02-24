@@ -58,7 +58,7 @@ To make it easier for fellow Windows users I decided to create [the bde-lock ins
 
 ## Download and Installation
 
-Get the [latest installer](https://github.com/dleidert/bde-lock/releases/latest "Link to the latest bde-lock installer release") and install it. The installation requires elevated permissions as Administrator.
+Get the [latest installer]({{ site.github.latest_release.assets[0].browser_download_url }} "Link to the latest bde-lock installer release") and install it. The installation requires elevated permissions as Administrator.
 
 ### Supported Windows versions
 

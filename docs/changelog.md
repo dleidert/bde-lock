@@ -18,14 +18,26 @@ tags:
   - installer
 ---
 
-These are the latest versions of `bde-lock` which have been released. For a complete list of all releases and changes please visit https://github.com/dleidert/bde-lock/releases.
+{%- assign releases = site.github.releases | sort: "tag_name" | reverse -%}
 
-## [bdelock 0.0.5](https://github.com/dleidert/bde-lock/tree/master/)
+These are the latest versions of `bde-lock` which have been released. For a complete list of all releases and changes please visit {{ site.github.releases_url }}.
 
-<time>Unreleased</time> ([compare changes to last release](https://github.com/dleidert/bde-lock/compare/v0.0.4...master#files_bucket "Compare changes in master for upcoming release"))
+## [bdelock UNRELEASED]({{ site.github.repository_url }}/tree/master/)
+
+<time>Unreleased</time> ([compare changes to last release](https://github.com/dleidert/bde-lock/compare/{{ releases[0].tag_name }}...master#files_bucket "Compare changes in master for upcoming release"))
 
 * Determine system drive letter during installation
 * 
+
+{% for release in releases limit:3 %}
+
+## [{{ release.name }}]({{ release.html_url }})
+
+Released <time datetime="{{ release.published_at }}">{{ release.published_at | date_to_string }}</time>
+
+{% endfor %}
+
+
 
 ## [bdelock 0.0.4](https://github.com/dleidert/bde-lock/releases/tag/v0.0.4)
 

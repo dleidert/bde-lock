@@ -31,7 +31,7 @@ These are the latest versions of `bde-lock` which have been released. For a comp
 
 {% for release in releases limit:5 %}
 
-## [{{ release.name }}]({{ release.html_url }}) {% if release.prerelease == "true" -%}(pre-release){%- endif %}
+## [{{ release.name }}]({{ release.html_url }}) {% if release.prerelease -%}(pre-release){%- endif %}
 
 Released <time datetime="{{ release.published_at }}">{{ release.published_at | date_to_string }}</time>
 {% unless release.tag_name == "v0.0.1" -%}

@@ -24,7 +24,6 @@ sitemap: false
 <!--
 {% assign foo = site.github.latest_release.assets | where: "content_type", "application/x-msdownload" %}
 result: {{ foo[0].browser_download_url }}
-result: {{ foo.browser_download_url }}
 -->
 
 <!--

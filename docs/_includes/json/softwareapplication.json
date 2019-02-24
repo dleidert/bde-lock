@@ -25,7 +25,7 @@
     {{ release.body | jsonify }},
     "{{ release.html_url }}"
   ],
-  "license": "https://raw.githubusercontent.com/dleidert/bde-lock/master/LICENSE",
+  "license": "{{ site.github.license.url | default: https://raw.githubusercontent.com/dleidert/bde-lock/master/LICENSE }}",
   "url": "{{ site.github.repository_url }}",
   "datePublished": "{{ release.published_at }}",
   "dateCreated": "{{ release.created_at }}",

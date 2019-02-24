@@ -5,7 +5,7 @@ sitemap: false
 ---
 
 <!--
-{{ site.github.latest_release.body | jsonify }}
+{{ site.github.latest_release.body | markdownify | jsonify }}
 -->
 
 <!--

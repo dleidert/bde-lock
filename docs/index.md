@@ -5,7 +5,7 @@ title:  Lock unlocked BitLocker encrypted drives via context menu
 description: >
   bde-lock is a simple Windows installer, which adds a 'Bitlocker Lock drive'
   function to the drive context menu entry to lock / re-lock an unlocked
-  BitLocker encrypted drive without the need to restart the Windows system.
+  BitLocker encrypted drive without the requirement to restart the Windows system.
 tags:
   - lock bitlocker encrypted drives
   - bitlocker drive locker

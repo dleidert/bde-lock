@@ -35,7 +35,6 @@ extra_json:
 
 * [About](#about "About the bde-lock project")
 * [Download and Installation](#download-and-installation "Download and installation instructions")
-    * [Latest release](#latest-release)
     * [Supported Windows versions](#supported-windows-versions)
     * [Supported languages](#supported-languages)
 * [Usage](#usage "Usage information and screenshot")
@@ -63,9 +62,7 @@ To make it easier for fellow Windows users I decided to create [the bde-lock ins
 
 Get the [current installer]({{ current.assets[0].browser_download_url }} "Download the latest released bde-lock installer {{ current.assets[0].name }}") and install it. The installation requires elevated permissions as Administrator.
 
-### Latest release
-
-The current release is [{{ current.name }}]({{ current.html_url }}) published on <time datetime="{{ current.published_at | date_to_xmlschema }}">{{ current.published_at | date_to_string }}</time> ([download installer]({{ current.assets[0].browser_download_url }} "Download the latest released bde-lock installer {{ current.assets[0].name }}")).
+The current release is [{{ current.name }}]({{ current.html_url }}) published on <time datetime="{{ current.published_at | date_to_xmlschema }}">{{ current.published_at | date_to_string }}</time>.
 
 {{ current.body }}
 

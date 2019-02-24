@@ -26,14 +26,11 @@
     {%- endfor -%}
   {%- endif %}
 <!--
-  latest_release: {{ site.github.latest_release }}
-
-  latest_release.assets: {{ site.github.latest_release.assets }}
-
   {%- assign asset = site.github.latest_release.assets -%}
-  url: {{ asset.url }}, {{ asset.browser_download_url }}
 
-  url: {{ site.github.latest_release.assets.url }}, {{ site.github.latest_release.assets.browser_download_url }}
+  url1: {{ asset.url }}, {{ asset.browser_download_url }}
+
+  url2: {{ site.github.latest_release.assets.url }}, {{ site.github.latest_release.assets.browser_download_url }}
 
   tag_name: {{ site.github.latest_release.tag_name }}
 

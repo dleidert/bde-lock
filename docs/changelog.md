@@ -35,6 +35,12 @@ These are the latest versions of `bde-lock` which have been released. For a comp
 
 Released <time datetime="{{ release.published_at }}">{{ release.published_at | date_to_string }}</time>
 
+{% if forloop.last <> true %}
+([compare changes to previous release](https://github.com/dleidert/bde-lock/compare/{{ release[forloop.index] }}...{{ release.tag_name }}#files_bucket "Compare changes between release versions {{ release[forloop.index] }} and {{ release.tag_name }}"))
+{% endif %}
+
+{{ release.body }}
+
 {% endfor %}
 
 

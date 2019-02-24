@@ -14,8 +14,11 @@ sitemap: false
 -->
 
 <!--
-{% assign releases = site.github.releases | sort: "tag_name" | reverse | limit: 3 %}
-{{ releases | inspect }}
+{% assign releases = site.github.releases | sort: "tag_name" | reverse %}
+{% for release in releases limit:3 %}
+{{ release.tag_name }}
+{% endfor %}
+
 -->
 
 <!--

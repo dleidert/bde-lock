@@ -27,6 +27,7 @@ These are the latest versions of `bde-lock` which have been released. For a comp
 Unreleased ([compare changes to last release]({{ site.github.repository_url }}/compare/{{ releases[0].tag_name }}...master#files_bucket "Compare changes in master for upcoming release"))
 
 * Determine system drive letter during installation
+* Use the (full) [Unlicense license](https://api.github.com/licenses/unlicense)
 * 
 
 {% for release in releases limit:5 %}

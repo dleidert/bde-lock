@@ -14,7 +14,7 @@ sitemap: false
 -->
 
 <!--
-{% assign releases = site.github.releases | sort: "id" | reverse | limit 3 %}
+{% assign releases = site.github.releases | sort: "tag_name" | reverse | limit 3 %}
 {{ releases | inspect }}
 -->
 

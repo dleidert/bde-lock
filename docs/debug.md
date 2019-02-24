@@ -9,6 +9,16 @@ sitemap: false
 -->
 
 <!--
+{% assign releases = site.github.releases | limit 3 %}
+{{ releases | inspect }}
+-->
+
+<!--
+{% assign releases = site.github.releases | sort: "id" | reverse | limit 3 %}
+{{ releases | inspect }}
+-->
+
+<!--
 {% assign foo = site.github.latest_release.assets | where: "content_type", "application/x-msdownload" %}
 result: {{ foo[0].browser_download_url }}
 result: {{ foo.browser_download_url }}

@@ -17,6 +17,7 @@ sitemap: false
 {% assign releases = site.github.releases | sort: "tag_name" | reverse %}
 {% for release in releases limit:3 %}
 {{ release.tag_name }} + {{ forloop.index }} + {{ releases[forloop.index].tag_name }}
+{% if release.prerelease == "true" %}(pre-release){% endif %}
 {% endfor %}
 
 -->

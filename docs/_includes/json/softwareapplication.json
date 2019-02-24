@@ -22,7 +22,7 @@
   "downloadUrl": "{{ release.assets[0].browser_download_url }}",
   "fileSize": "{{ release.assets[0].size | divided_by: 1024 }}",
   "releaseNotes": [
-    "{{ release.body }}",
+    "{{ release.body | escape }}",
     "{{ release.html_url }}"
   ],
   "license": "https://raw.githubusercontent.com/dleidert/bde-lock/master/LICENSE",

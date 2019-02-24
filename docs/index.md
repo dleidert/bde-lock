@@ -59,13 +59,15 @@ To make it easier for fellow Windows users I decided to create [the bde-lock ins
 
 ## Download and Installation
 
-Get the [latest installer]({{ site.github.latest_release.assets[0].browser_download_url }} "Link to the latest bde-lock installer release") and install it. The installation requires elevated permissions as Administrator.
+{% assign current = site.github.latest_release -%}
+
+Get the [current installer]({{ current.assets[0].browser_download_url }} "Download the latest released bde-lock installer {{ current.assets[0].name }}") and install it. The installation requires elevated permissions as Administrator.
 
 ### Latest release
 
-The latest release is [{{ site.github.latest_release.name }}]({{ site.github.latest_release.html_url }}).
+The current release is [{{ current.name }}]({{ current.html_url }}) published on <time datetime="{{ current.published_at | date_to_xmlschema }}">{{ current.published_at | date_to_string }}</time> ([download installer]({{ current.assets[0].browser_download_url }} "Download the latest released bde-lock installer {{ current.assets[0].name }}")).
 
-{{ site.github.latest_release.body | markdownify }}
+{{ current.body }}
 
 For a more complete changelog either visit the [News page](./changelog) or the [projects release site]({{ site.github.releases_url }}).
 

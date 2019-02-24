@@ -11,5 +11,6 @@
   "releaseNotes": "https://dleidert.github.io/bde-lock/changelog",
   "license": "https://raw.githubusercontent.com/dleidert/bde-lock/master/LICENSE",
   "url": "https://dleidert.github.io/bde-lock/",
-  "author": {%- include json/person.json -%}
+  "author": {%- include json/person.json -%},
+  "publisher": {%- include json/person.json -%}
 }

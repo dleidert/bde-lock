@@ -26,11 +26,15 @@
     {%- endfor -%}
   {%- endif %}
 <!--
-  {{ site.github.latest_release }}
-  {{ site.github.latest_release.assets }}
-  {{ site.github.latest_release.assets.browser_download_url }}
-  {{ site.github.latest_release.tag_name }}
-  {{ site.github | inspect }}
+  latest_release: {{ site.github.latest_release }}
+
+  latest_release.assets: {{ site.github.latest_release.assets }}
+
+  url: {{ site.github.latest_release.assets.browser_download_url }}
+
+  tag_name: {{ site.github.latest_release.tag_name }}
+
+  inspect: {{ site.github | inspect }}
 -->
 
 </head>

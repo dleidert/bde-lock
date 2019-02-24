@@ -5,8 +5,9 @@ sitemap: false
 ---
 
 <!--
-{{ site.github.latest_release.body | replace: '\', '\\' }}
-{{ site.github.latest_release.body | cgi_escape }}
+1{{ site.github.latest_release.body | replace: '\', '\\' }}
+2{{ site.github.latest_release.body | xml_escape }}
+3{{ site.github.latest_release.body | xml_escape | escape }}
 -->
 
 <!--

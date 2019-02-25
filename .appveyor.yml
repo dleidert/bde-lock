@@ -3,6 +3,12 @@ branches:
   only:
   - master
 skip_tags: true
+skip_commits:
+  files:
+  - docs/*
+  - .gitattributes
+  - .gitignore
+  - README.md
 image:
 - Visual Studio 2015
 - Ubuntu1804

@@ -1,20 +1,15 @@
-image:
-  - Visual Studio 2015
-  - Ubuntu
-
-skip_tags: true
-
+version: 1.0.{build}
 branches:
   only:
-    - master
-
-platform:
-  - x86
-  - x64
-
+  - master
+skip_tags: true
+image:
+- Visual Studio 2015
+- Ubuntu
 install:
-  - sh: sudo apt install nsis
-
+- sh: sudo apt install nsis
 build_script:
-  - sh: makensis bdelock.nsi
-  - cmd: makensis.exe /V 3 bdelock.nsi
+- cmd: makensis.exe /V 3 bdelock.nsi
+- sh: makensis bdelock.nsi
+test: off
+deploy: off

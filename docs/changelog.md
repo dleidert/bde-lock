@@ -28,6 +28,7 @@ Unreleased ([compare changes to last release]({{ site.github.repository_url }}/c
 
 * Determine system drive letter during installation
 * Use the (full) [Unlicense license](https://api.github.com/licenses/unlicense)
+* Implement build testing using [appveyor.com](https://www.appveyor.com)
 * 
 
 {% for release in releases limit:5 %}

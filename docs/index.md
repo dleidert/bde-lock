@@ -54,7 +54,7 @@ For whatever reason Microsoft does not provide a drive context menu function to 
 
 Several solutions have been suggested, using the command shell or tasks or adding shortcuts or context menu entries. All solutions rely on the tool [`manage-bde.exe`](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/manage-bde), which is already installed on every Windows system providing BitLocker encryption. Further I prefer a context menu entry (righ-click on the drive), which executes the necessary command, instead of a desktop shortcut or task. The entry can be created by adding some keys to the Windows regstry.
 
-To make it easier for fellow Windows users I decided to create [the bde-lock installer](https://github.com/dleidert/bde-lock/releases/latest), which will create all [required registry keys for the context menu entry](./registry-keys) and install a [small script to perform the lock task with the required permissions](./manage-bde). The installer will also provide an uninstaller, which will remove all created registry keys and all installed files.
+To make it easier for fellow Windows users I decided to create [the bde-lock installer]({{ site.github.releases_url }}/latest), which will create all [required registry keys for the context menu entry](./registry-keys) and install a [small script to perform the lock task with the required permissions](./manage-bde). The installer will also provide an uninstaller, which will remove all created registry keys and all installed files.
 
 ## Download and Installation
 
@@ -78,7 +78,7 @@ Currently English and German are supported, but [adding translations is quite ea
 
 The installer will add a ([localized entry](./translation "Helping translate the bde-lock installer")) `Bitlocker Lock Drive` to the drive context menu. The function is only available for unlocked BitLocker encrypted drives except for the system drive.
 
-**Caution:** Since release 0.0.5 the system drive letter is hardcoded in the [registry](./registry-keys#hkcrdriveshelllock-bde) to the drive letter found by reading the `%SystemDrive%` environment variable during installation. In earlier versions the system drive was wired to the drive letter `C:`. A more generic approach is currently on the todo list, see also issue [#1](https://github.com/dleidert/bde-lock/issues/1).
+**Caution:** Since release 0.0.5 the system drive letter is hardcoded in the [registry](./registry-keys#hkcrdriveshelllock-bde) to the drive letter found by reading the `%SystemDrive%` environment variable during installation. In earlier versions the system drive was wired to the drive letter `C:`. A more generic approach is currently on the todo list, see also issue [#1]({{ site.github.issues_url }}/1).
 
 *image here*
 

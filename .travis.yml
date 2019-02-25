@@ -5,17 +5,20 @@ notifications:
   email: false
   irc: false
 
-os: linux
-dist: xenial
-
 branches:
   only: master
 
-addons:
-  apt:
-    update: true
-    packages: nsis
-
-install: true
-
-script: makensis -V3 bdelock.nsi
+matrix:
+  exclude:
+  - os: windows
+    install: choco install -y nsis
+    script: makensis.exe /V3 bdelock.nsi
+  include:
+  - os: linux
+    dist: xenial
+    addons:
+      apt:
+        update: true
+        packages: nsis
+    install: true
+    script: makensis -V3 bdelock.nsi

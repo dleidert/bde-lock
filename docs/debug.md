@@ -31,6 +31,6 @@ result: {{ foo[0].browser_download_url }}
 
 <!-- show site.github -->
 ```JSON
-{{ site.github | inspect }}
+{{ site.github | inspect | url_decode }}
 ```
 

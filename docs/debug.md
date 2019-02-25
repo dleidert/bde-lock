@@ -29,5 +29,7 @@ sitemap: false
 result: {{ foo[0].browser_download_url }}
 -->
 
+{% highlight javascript linenos %}
 {{ site.github | inspect }}
+{% endhighlight %}
 

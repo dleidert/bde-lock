@@ -27,14 +27,9 @@ sitemap: false
 {% assign foo = site.github.latest_release.assets | where: "content_type", "application/x-msdownload" -%}
 <{{ foo[0].browser_download_url }}>
 
-## Debug `site.github content`
+## Debug `site.github` content
 
 <!-- show site.github -->
 ```JSON
 {{ site.github | neat_json }}
 ```
-
-{% highlight javascript linenos %}
-{{ site.github | neat_json }}
-{% endhighlight %}
-

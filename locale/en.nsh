@@ -1,4 +1,4 @@
-﻿# Author: Daniel Leidert, 2018
+# Author: Daniel Leidert, 2018
 
 LoadLanguageFile "${NSISDIR}\Contrib\Language files\English.nlf"
 

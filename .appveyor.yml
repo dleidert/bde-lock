@@ -8,6 +8,7 @@ skip_commits:
   - docs/*
   - .gitattributes
   - .gitignore
+  - .travis.yml
   - README.md
 image:
 - Visual Studio 2015

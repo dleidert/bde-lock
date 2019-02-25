@@ -1,6 +1,10 @@
 language: minimal
 sudo: false
 
+notifications:
+  email: false
+  irc: false
+
 os: linux
 dist: xenial
 

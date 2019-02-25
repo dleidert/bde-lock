@@ -9,7 +9,7 @@ branches:
   only: master
 
 matrix:
-  exclude:
+  allow_failures:
   - os: windows
     install: choco install nsis -y
     script: makensis.exe /V3 bdelock.nsi

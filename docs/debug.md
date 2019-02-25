@@ -4,6 +4,8 @@ title: Debug page
 sitemap: false
 ---
 
+## Useful links
+
 * Google SC
     * <https://support.google.com/webmasters/answer/2650907?hl=de>
     * <https://search.google.com/structured-data/testing-tool#url=https%3A%2F%2Fdleidert.github.io%2Fbde-lock%2F>
@@ -20,14 +22,12 @@ sitemap: false
 * GitHub
     * <https://github.com/github/linguist/blob/master/lib/linguist/languages.yml>
 
-<!--
-{{ site.github.license | inspect }}
--->
+## Download link
 
-<!--
-{% assign foo = site.github.latest_release.assets | where: "content_type", "application/x-msdownload" %}
-result: {{ foo[0].browser_download_url }}
--->
+{% assign foo = site.github.latest_release.assets | where: "content_type", "application/x-msdownload" -%}
+<{{ foo[0].browser_download_url }}>
+
+## Debug `site.github content`
 
 <!-- show site.github -->
 ```JSON

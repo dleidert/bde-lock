@@ -4,13 +4,17 @@
 
 Simple installer to create a drive context menu function to lock an unlocked bitlocker encrypted drive in Windows
 
-[![bde-lock Project License](https://img.shields.io/github/license/dleidert/bde-lock.svg?style=plastic)][url.license]
-[![Download Count on github.com](https://img.shields.io/github/downloads/dleidert/bde-lock/total.svg?style=plastic)][url.download]
-[![Build status on appveyor.com](https://img.shields.io/appveyor/ci/dleidert/bde-lock.svg?style=plastic)][url.appveyor]
+[![current bde-lock version](https://img.shields.io/github/release/dleidert/bde-lock.svg)][url.release]
+[![current bde-lock release date](https://img.shields.io/github/release-date/dleidert/bde-lock.svg)][url.release]
+[![bde-lock project license](https://img.shields.io/github/license/dleidert/bde-lock.svg?style=plastic)][url.license]
+[![build status on appveyor.com](https://img.shields.io/appveyor/ci/dleidert/bde-lock.svg?label=Windows%20build)][url.appveyor]
+[![build status on appveyor.com](https://img.shields.io/appveyor/ci/dleidert/bde-lock.svg?label=Linux%20build))][url.appveyor]
+[![download count on github.com](https://img.shields.io/github/downloads/dleidert/bde-lock/total.svg)][url.download]
 
+[url.release]: https://github.com/dleidert/bde-lock/releases/latest/
 [url.license]: https://raw.githubusercontent.com/dleidert/bde-lock/master/LICENSE
-[url.download]: https://github.com/dleidert/bdelock/releases/
 [url.appveyor]: https://ci.appveyor.com/project/dleidert/bde-lock
+[url.download]: https://github.com/dleidert/bdelock/releases/
 
   * [About the project](#about-the-project)
   * [Download](#download)

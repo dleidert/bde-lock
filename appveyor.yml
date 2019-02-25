@@ -11,6 +11,8 @@ install:
     sudo apt update
 
     sudo apt install --yes nsis
+
+    update-locale LANG=C.UTF-8
 build_script:
 - cmd: makensis.exe /V3 bdelock.nsi
 - sh: makensis bdelock.nsi -V4

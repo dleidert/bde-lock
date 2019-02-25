@@ -32,5 +32,6 @@ result: {{ foo[0].browser_download_url }}
 <!-- show site.github -->
 ```JSON
 {{ site.github | jsonify }}
+{{ site.github | neat_json }}
 ```
 

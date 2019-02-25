@@ -41,7 +41,9 @@ XPStyle on
 
 # Installer version information
 VIProductVersion "${VERSION}.${REVISION}"
+!if ${NSIS_PACKEDVERSION} > 0x02ffffff ; NSIS 3+:
 VIFileVersion "${VERSION}.${REVISION}"
+!endif
 
 !include "locale\languages.nsh"
 

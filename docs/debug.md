@@ -29,7 +29,5 @@ sitemap: false
 result: {{ foo[0].browser_download_url }}
 -->
 
-<!--
-  inspect: {{ site.github | inspect }}
--->
+{{ site.github | inspect }}
 

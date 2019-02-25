@@ -22,6 +22,9 @@
 Var SystemDrive
 
 # Installer configuration
+!if ${NSIS_PACKEDVERSION} > 0x02ffffff ; NSIS 3+:
+Unicode true
+!endif
 CRCCheck on
 InstallColors /windows
 InstallDir "$PROGRAMFILES64\${PROJECT}"
@@ -31,13 +34,10 @@ ManifestSupportedOS WinVista Win7 Win8 Win8.1 Win10
 !endif
 Name "BDELock v${VERSION}"
 RequestExecutionLevel admin
+SetCompressor /SOLID lzma
 ShowInstDetails   hide
 ShowUninstDetails hide
-!if ${NSIS_PACKEDVERSION} > 0x02ffffff ; NSIS 3+:
-Unicode true
-!endif
 XPStyle on
-SetCompressor /SOLID lzma
 
 # Installer version information
 VIProductVersion "${VERSION}.${REVISION}"

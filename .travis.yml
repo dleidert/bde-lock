@@ -1,0 +1,14 @@
+language: minimal
+sudo: false
+
+os: linux
+dist: xenial
+
+addons:
+  apt:
+    update: true
+    packages: nsis
+
+install: true
+
+script: makensis -V3 bdelock.nsi

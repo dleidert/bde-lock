@@ -26,12 +26,18 @@ CRCCheck on
 InstallColors /windows
 InstallDir "$PROGRAMFILES64\${PROJECT}"
 LicenseData LICENSE
+!if ${NSIS_PACKEDVERSION} > 0x02ffffff ; NSIS 3+:
+ManifestSupportedOS WinVista Win7 Win8 Win8.1 Win10
+!endif
 ManifestSupportedOS WinVista Win7 Win8 Win8.1 Win10
 Name "BDELock v${VERSION}"
 RequestExecutionLevel admin
 SetCompressor /SOLID lzma
 ShowInstDetails   hide
 ShowUninstDetails hide
+!if ${NSIS_PACKEDVERSION} > 0x02ffffff ; NSIS 3+:
+Unicode true
+!endif
 XPStyle on
 
 # Installer version information

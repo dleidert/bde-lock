@@ -7,7 +7,10 @@ image:
 - Visual Studio 2015
 - Ubuntu
 install:
-- sh: sudo apt install nsis
+- sh: >-
+    sudo apt update
+
+    sudo apt install --yes nsis
 build_script:
 - cmd: makensis.exe /V 3 bdelock.nsi
 - sh: makensis bdelock.nsi

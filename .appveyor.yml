@@ -13,6 +13,6 @@ install:
     sudo apt install --yes nsis
 build_script:
 - cmd: makensis.exe /V3 bdelock.nsi
-- sh: makensis bdelock.nsi -V4
+- sh: makensis -V3 bdelock.nsi
 test: off
 deploy: off

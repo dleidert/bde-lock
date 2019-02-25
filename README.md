@@ -4,9 +4,13 @@
 
 Simple installer to create a drive context menu function to lock an unlocked bitlocker encrypted drive in Windows
 
-[![Download Count](https://img.shields.io/github/downloads/dleidert/bde-lock/total.svg?style=plastic)](https://github.com/dleidert/bdelock/releases/)
-[![Build status](https://img.shields.io/appveyor/ci/dleidert/bde-lock.svg?style=plastic)](https://ci.appveyor.com/project/dleidert/bde-lock)
-[![Build status](https://ci.appveyor.com/api/projects/status/iil0rr840ln1c2x8?svg=true)](https://ci.appveyor.com/project/dleidert/bde-lock)
+[![bde-lock Project License](https://img.shields.io/github/license/dleidert/bde-lock.svg?style=plastic)][url.license]
+[![Download Count on github.com](https://img.shields.io/github/downloads/dleidert/bde-lock/total.svg?style=plastic)][url.download]
+[![Build status on appveyor.com](https://img.shields.io/appveyor/ci/dleidert/bde-lock.svg?style=plastic)][url.appveyor]
+
+[url.license]: https://raw.githubusercontent.com/dleidert/bde-lock/master/LICENSE
+[url.download]: https://github.com/dleidert/bdelock/releases/
+[url.appveyor]: https://ci.appveyor.com/project/dleidert/bde-lock
 
   * [About the project](#about-the-project)
   * [Download](#download)

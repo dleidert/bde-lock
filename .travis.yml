@@ -1,8 +1,6 @@
 language: minimal
 sudo: false
 
-env:
-
 notifications:
   email:
     on_success: never
@@ -12,10 +10,9 @@ branches:
 
 matrix:
   allow_failures:
-  - env: OS=windows
+  - os: windows
   include:
   - os: linux
-    env: OS=linux
     dist: xenial
     addons:
       apt:
@@ -24,6 +21,5 @@ matrix:
     install: true
     script: makensis -V3 bdelock.nsi
   - os: windows
-    env: OS=windows
     install: choco install nsis -y
     script: makensis.exe /V3 bdelock.nsi

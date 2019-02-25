@@ -10,11 +10,9 @@ install:
 - sh: >-
     sudo apt update
 
-    apt-cache policy nsis
-
     sudo apt install --yes nsis
 build_script:
 - cmd: makensis.exe /V3 bdelock.nsi
-- sh: cat bdelock.nsi && makensis bdelock.nsi -V4
+- sh: makensis bdelock.nsi -V4
 test: off
 deploy: off

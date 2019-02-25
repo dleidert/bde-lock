@@ -34,3 +34,7 @@ result: {{ foo[0].browser_download_url }}
 {{ site.github | neat_json }}
 ```
 
+{% highlight javascript linenos %}
+{{ site.github | neat_json }}
+{% endhighlight %}
+

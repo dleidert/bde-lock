@@ -5,16 +5,16 @@ branches:
 skip_tags: true
 image:
 - Visual Studio 2015
-- Ubuntu
+- Ubuntu1804
 install:
 - sh: >-
     sudo apt update
 
-    sudo apt install --yes nsis
+    apt-cache policy nsis
 
-    sudo update-locale LANG=C.UTF-8
+    sudo apt install --yes nsis
 build_script:
 - cmd: makensis.exe /V3 bdelock.nsi
-- sh: makensis bdelock.nsi -V4
+- sh: cat bdelock.nsi && makensis bdelock.nsi -V4
 test: off
 deploy: off

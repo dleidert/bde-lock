@@ -11,7 +11,7 @@ branches:
 matrix:
   exclude:
   - os: windows
-    install: choco install -y nsis
+    install: choco install nsis -y
     script: makensis.exe /V3 bdelock.nsi
   include:
   - os: linux

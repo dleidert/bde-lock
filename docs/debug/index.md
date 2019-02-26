@@ -27,6 +27,11 @@ sitemap: false
 {% assign foo = site.github.latest_release.assets | where: "content_type", "application/x-msdownload" -%}
 <{{ foo[0].browser_download_url }}>
 
+{%- assign releases = site.github.releases | where: "draft" | sort: "tag_name" | reverse -%}
+```JSON
+{{ releases | neat_json }}
+```
+
 ## Debug `site.github` content
 
 <!-- show site.github -->

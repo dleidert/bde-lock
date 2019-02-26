@@ -4,6 +4,19 @@
 
 Einfacher Installer, der im Laufwerks-Kontextmenü einen Eintrag erzeugt, um ein unter Windows mit Bitlocker geschütztes entsperrtes Laufwerk zu sperren
 
+[![Aktuelle bde-lock Version](https://img.shields.io/github/release/dleidert/bde-lock.svg)][url.release]
+[![bde-lock Veröffentlichungsdatum](https://img.shields.io/github/release-date/dleidert/bde-lock.svg)][url.release]
+[![bde-lock Lizenzinformation](https://img.shields.io/github/license/dleidert/bde-lock.svg)][url.license]
+[![Baustatus auf appveyor.com](https://img.shields.io/appveyor/ci/dleidert/bde-lock/master.svg)][url.appveyor]
+[![Baustatus auf travis-ci.org](https://img.shields.io/travis/dleidert/bde-lock/master.svg)][url.travisci]
+[![Downloadzähler für github.com](https://img.shields.io/github/downloads/dleidert/bde-lock/total.svg)][url.download]
+
+[url.release]: https://github.com/dleidert/bde-lock/releases/latest/
+[url.license]: https://raw.githubusercontent.com/dleidert/bde-lock/master/LICENSE
+[url.appveyor]: https://ci.appveyor.com/project/dleidert/bde-lock
+[url.travisci]: https://travis-ci.org/dleidert/bde-lock
+[url.download]: https://github.com/dleidert/bdelock/releases/
+
   * [Über das Projekt](#über-das-projekt)
   * [Download](#download)
   * [Installation](#installation)

@@ -18,24 +18,22 @@ tags:
   - installer
 ---
 
-{%- assign releases = site.github.releases | sort: "tag_name" | reverse -%}
+{%- assign releases = site.github.releases | where: "draft", false | sort: "tag_name" | reverse -%}
+{%- assign drafts   = site.github.releases | where: "draft", true | sort: "tag_name" | reverse -%}
 
 These are the latest versions of `bde-lock` which have been released. For a complete list of all releases and changes please visit {{ site.github.releases_url }}.
 
 ## [bdelock UNRELEASED]({{ site.github.repository_url }}/tree/master/)
 
-Unreleased ([compare changes to last release]({{ site.github.repository_url }}/compare/{{ releases[0].tag_name }}...master#files_bucket "Compare changes in master for upcoming release"))
+Unreleased [changes to last release]({{ site.github.repository_url }}/compare/{{ releases[0].tag_name }}...master#files_bucket "Compare changes in master for upcoming release")
 
-* Determine and set system drive letter during installation
-* Include the (full) [Unlicense license](https://api.github.com/licenses/unlicense) text
-* Implement continuous integration support using [AppVeyor](https://www.appveyor.com)
-* Implement continuous integration support using [TRAVIS](https://travis-ci.org)
+{% if drafts[0].body -%}{{ drafts[0].body }}{%- endif %}
 
 {% for release in releases limit:5 %}
 
 ## [{{ release.name }}]({{ release.html_url }}) {% if release.prerelease -%}(pre-release){%- endif %}
 
-Released <time datetime="{{ release.published_at }}">{{ release.published_at }}</time>
+Released <time datetime="{{ release.published_at | date_to_xmlschema }}">{{ release.published_at | date_to_string }}</time>
 {% unless release.tag_name == "v0.0.1" -%}
 ([compare changes to previous release]({{ site.github.repository_url }}/compare/{{ releases[forloop.index].tag_name }}...{{ release.tag_name }}#files_bucket "Compare changes between release versions {{ releases[forloop.index].tag_name }} and {{ release.tag_name }}"))
 {%- endunless %}

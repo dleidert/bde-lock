@@ -46,7 +46,7 @@ extra_json:
 [url.travisci]: https://travis-ci.org/dleidert/bde-lock
 [url.download]: https://github.com/dleidert/bdelock/releases/
 
-* [About](#about "About the bde-lock project")
+* [About the project](#about "About the bde-lock project")
 * [Download and Installation](#download-and-installation "Download and installation instructions")
     * [Supported Windows versions](#supported-windows-versions)
     * [Supported languages](#supported-languages)

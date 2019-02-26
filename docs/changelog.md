@@ -26,10 +26,10 @@ These are the latest versions of `bde-lock` which have been released. For a comp
 
 Unreleased ([compare changes to last release]({{ site.github.repository_url }}/compare/{{ releases[0].tag_name }}...master#files_bucket "Compare changes in master for upcoming release"))
 
-* Determine system drive letter during installation
-* Use the (full) [Unlicense license](https://api.github.com/licenses/unlicense)
-* Implement build testing using [appveyor.com](https://www.appveyor.com)
-* 
+* Determine and set system drive letter during installation
+* Include the (full) [Unlicense license](https://api.github.com/licenses/unlicense) text
+* Implement continuous integration support using [AppVeyor](https://www.appveyor.com)
+* Implement continuous integration support using [TRAVIS](https://travis-ci.org)
 
 {% for release in releases limit:5 %}
 

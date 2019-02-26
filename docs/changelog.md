@@ -23,7 +23,7 @@ tags:
 
 These are the latest versions of `bde-lock` which have been released. For a complete list of all releases and changes please visit {{ site.github.releases_url }}.
 
-## [{% if drafts[0].name -%}[{{ drafts[0].name }}]({{ drafts[0].html_url }}){% else %}bdelock{%- endif %} UNRELEASED]({{ site.github.repository_url }}/tree/master/)
+## [{% if drafts[0].name -%}{{ drafts[0].name }}{% else %}bdelock{%- endif %} UNRELEASED]({% if drafts[0].html_url -%}{{ drafts[0].html_url }}{%- else -%}{{ site.github.repository_url }}/tree/master/{%- endif %})
 
 Unreleased [changes to last release]({{ site.github.repository_url }}/compare/{{ releases[0].tag_name }}...master#files_bucket "Compare changes in master for upcoming release"){% if drafts[0].name %} in upoming {{ drafts[0].name }} release{%- endif %}
 

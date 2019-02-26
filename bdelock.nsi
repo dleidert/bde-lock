@@ -5,7 +5,7 @@
 
 # Defines
 !define PROJECT     "bdelock"
-!define VERSION     "0.0.5"
+!define VERSION     "0.0.6"
 !define REVISION    "0"
 !define LEGALNOTE   "Public Domain"
 !define WEBPAGE     "https://github.com/dleidert/bde-lock"

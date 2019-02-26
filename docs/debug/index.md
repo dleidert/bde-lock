@@ -21,6 +21,10 @@ sitemap: false
     * <https://jekyllrb.com/docs/liquid/filters/>
 * GitHub
     * <https://github.com/github/linguist/blob/master/lib/linguist/languages.yml>
+* NSIS
+    * <https://stackoverflow.com/questions/10581570/setting-the-uac-publisher-field-for-a-nsis-installer>
+	* <https://docs.microsoft.com/en-us/windows/desktop/seccrypto/makecert>
+	* <https://docs.microsoft.com/en-us/previous-versions/bb756995(v=msdn.10)>
 
 ## Download link
 

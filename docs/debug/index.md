@@ -35,6 +35,8 @@ sitemap: false
 
 {% assign releases = site.github.releases | where: "draft", false | sort: "tag_name" | reverse %}
 
+<!-- test .appveyor.yml -->
+
 <!-- show releases -->
 ```JSON
 {{ site.github.releases | where: "draft", false | sort: "tag_name" | reverse | neat_json }}

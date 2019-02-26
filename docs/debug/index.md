@@ -29,7 +29,7 @@ sitemap: false
 
 ## Debug `releases` content
 
-{%- assign releases = site.github.releases | where: "draft", true | sort: "tag_name" | reverse -%}
+{% assign releases = site.github.releases | where: "draft", false | sort: "tag_name" | reverse -%}
 ```JSON
 {{ releases | neat_json }}
 ```

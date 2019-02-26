@@ -5,7 +5,7 @@ branches:
 skip_tags: true
 skip_commits:
   files:
-  - docs/*
+  - docs/**
   - .gitattributes
   - .gitignore
   - .travis.yml

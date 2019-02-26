@@ -1,4 +1,4 @@
-[`English`](/README.md) | **`Deutsch`**
+[`English`](/docs/README.md) | **`Deutsch`**
 
 # [bde-lock](https://dleidert.github.io/bde-lock)
 

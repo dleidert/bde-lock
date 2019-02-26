@@ -12,6 +12,10 @@ paginate: 6
 paginate_path: "/page/:num/"
 excerpt_separator: <!-- excerpt -->
 
+exclude:
+  - README.md
+  - "*/README.md"
+
 header_pages:
   - index.md
   - posts.md

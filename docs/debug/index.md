@@ -33,7 +33,7 @@ sitemap: false
 
 <!-- show releases -->
 ```JSON
-{{ releases | neat_json }}
+{{ site.github.releases | where: "draft", false | sort: "tag_name" | reverse | neat_json }}
 ```
 
 ## Debug `site.github` content

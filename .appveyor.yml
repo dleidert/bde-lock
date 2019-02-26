@@ -5,11 +5,10 @@ branches:
 skip_tags: true
 skip_commits:
   files:
-  - docs/**
+  - 'docs/**'
   - .gitattributes
   - .gitignore
   - .travis.yml
-  - README.md
 image:
 - Visual Studio 2015
 - Ubuntu1804

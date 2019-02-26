@@ -24,12 +24,13 @@ sitemap: false
 
 ## Download link
 
-{% assign foo = site.github.latest_release.assets | where: "content_type", "application/x-msdownload" -%}
+{% assign foo = site.github.latest_release.assets | where: "content_type", "application/x-msdownload" %}
 <{{ foo[0].browser_download_url }}>
 
 ## Debug `releases` content
 
 {% assign releases = site.github.releases | where: "draft", false | sort: "tag_name" | reverse %}
+
 <!-- show releases -->
 ```JSON
 {{ releases | neat_json }}

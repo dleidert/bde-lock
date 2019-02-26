@@ -1,4 +1,4 @@
----
+ ---
 layout: page
 shorttitle: Home
 title:  Lock unlocked BitLocker encrypted drives via context menu
@@ -40,11 +40,11 @@ extra_json:
 [![build status on travis-ci.org](https://img.shields.io/travis/dleidert/bde-lock/master.svg?label=travis%20ci)][url.travisci]
 [![download count on github.com](https://img.shields.io/github/downloads/dleidert/bde-lock/total.svg)][url.download]
 
-[url.release]: https://github.com/dleidert/bde-lock/releases/latest/
-[url.license]: https://raw.githubusercontent.com/dleidert/bde-lock/master/LICENSE
-[url.appveyor]: https://ci.appveyor.com/project/dleidert/bde-lock
-[url.travisci]: https://travis-ci.org/dleidert/bde-lock
-[url.download]: https://github.com/dleidert/bdelock/releases/
+[url.release]: https://github.com/dleidert/bde-lock/releases/latest/ "Check out the last bde-lock release"
+[url.license]: https://raw.githubusercontent.com/dleidert/bde-lock/master/LICENSE "Check out the license of the bde-lock project"
+[url.appveyor]: https://ci.appveyor.com/project/dleidert/bde-lock "Check out the AppVeyour CI build status for bde-lock"
+[url.travisci]: https://travis-ci.org/dleidert/bde-lock "Check out the TRAVIS CI build status bde-lock"
+[url.download]: https://github.com/dleidert/bdelock/releases/ "Check out the bde-lock release page"
 
 * [About the project](#about "About the bde-lock project")
 * [Download and Installation](#download-and-installation "Download and installation instructions")

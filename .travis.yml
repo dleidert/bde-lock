@@ -21,5 +21,6 @@ matrix:
     install: true
     script: makensis -V3 bdelock.nsi
   - os: windows
+    filter_secrets: false
     install: choco install nsis -y
     script: makensis.exe /V3 bdelock.nsi

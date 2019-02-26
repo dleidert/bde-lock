@@ -36,8 +36,8 @@ extra_json:
 [![current bde-lock version](https://img.shields.io/github/release/dleidert/bde-lock.svg)][url.release]
 [![current bde-lock release date](https://img.shields.io/github/release-date/dleidert/bde-lock.svg)][url.release]
 [![bde-lock project license](https://img.shields.io/github/license/dleidert/bde-lock.svg)][url.license]
-[![build status on appveyor.com](https://img.shields.io/appveyor/ci/dleidert/bde-lock/master.svg?label=AppVeyour%20CI)][url.appveyor]
-[![build status on travis-ci.org](https://img.shields.io/travis/dleidert/bde-lock/master.svg?label=TRAVIS%20CI)][url.travisci]
+[![build status on appveyor.com](https://img.shields.io/appveyor/ci/dleidert/bde-lock/master.svg?label=appveyour%20ci)][url.appveyor]
+[![build status on travis-ci.org](https://img.shields.io/travis/dleidert/bde-lock/master.svg?label=travis%20ci)][url.travisci]
 [![download count on github.com](https://img.shields.io/github/downloads/dleidert/bde-lock/total.svg)][url.download]
 
 [url.release]: https://github.com/dleidert/bde-lock/releases/latest/

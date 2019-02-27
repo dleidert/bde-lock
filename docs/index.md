@@ -1,4 +1,4 @@
- ---
+---
 layout: page
 shorttitle: Home
 title:  Lock unlocked BitLocker encrypted drives via context menu

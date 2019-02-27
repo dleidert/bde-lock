@@ -36,13 +36,13 @@ extra_json:
 [![current bde-lock version](https://img.shields.io/github/release/dleidert/bde-lock.svg)][url.release]
 [![current bde-lock release date](https://img.shields.io/github/release-date/dleidert/bde-lock.svg)][url.release]
 [![bde-lock project license](https://img.shields.io/github/license/dleidert/bde-lock.svg)][url.license]
-[![build status on appveyor.com](https://img.shields.io/appveyor/ci/dleidert/bde-lock/master.svg?label=appveyour%20ci)][url.appveyor]
+[![build status on appveyor.com](https://img.shields.io/appveyor/ci/dleidert/bde-lock/master.svg?label=appveyor%20ci)][url.appveyor]
 [![build status on travis-ci.org](https://img.shields.io/travis/dleidert/bde-lock/master.svg?label=travis%20ci)][url.travisci]
 [![download count on github.com](https://img.shields.io/github/downloads/dleidert/bde-lock/total.svg)][url.download]
 
 [url.release]: https://github.com/dleidert/bde-lock/releases/latest/ "Check out the last bde-lock release"
 [url.license]: https://raw.githubusercontent.com/dleidert/bde-lock/master/LICENSE "Check out the license of the bde-lock project"
-[url.appveyor]: https://ci.appveyor.com/project/dleidert/bde-lock "Check out the AppVeyour CI build status for bde-lock"
+[url.appveyor]: https://ci.appveyor.com/project/dleidert/bde-lock "Check out the AppVeyor CI build status for bde-lock"
 [url.travisci]: https://travis-ci.org/dleidert/bde-lock "Check out the TRAVIS CI build status bde-lock"
 [url.download]: https://github.com/dleidert/bdelock/releases/ "Check out the bde-lock release page"
 

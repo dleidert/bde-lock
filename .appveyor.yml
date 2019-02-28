@@ -13,18 +13,16 @@ skip_commits:
   - docs/**/*
 
 image:
-  - Visual Studio 2015
-  - Ubuntu1804
+- Visual Studio 2015
+- Ubuntu1804
 
 install:
-  - sh: >-
-    sudo apt update
-
-    sudo apt install --yes nsis
+- sh: sudo apt update
+- sh: sudo apt install --yes nsis
 
 build_script:
-  - cmd: makensis.exe /V3 bdelock.nsi
-  - sh: makensis -V3 bdelock.nsi
+- cmd: makensis.exe /V3 bdelock.nsi
+- sh: makensis -V3 bdelock.nsi
 
 test: off
 deploy: off

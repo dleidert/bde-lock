@@ -44,7 +44,7 @@ extra_json:
 [url.license]: https://raw.githubusercontent.com/dleidert/bde-lock/master/LICENSE "Check out the license of the bde-lock project"
 [url.appveyor]: https://ci.appveyor.com/project/dleidert/bde-lock "Check out the AppVeyor CI build status for bde-lock"
 [url.travisci]: https://travis-ci.org/dleidert/bde-lock "Check out the TRAVIS CI build status bde-lock"
-[url.download]: https://github.com/dleidert/bdelock/releases/ "Check out the bde-lock release page"
+[url.download]: https://github.com/dleidert/bde-lock/releases/ "Check out the bde-lock release page"
 
 * [About the project](#about "About the bde-lock project")
 * [Download and Installation](#download-and-installation "Download and installation instructions")

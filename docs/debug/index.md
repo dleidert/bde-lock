@@ -21,10 +21,16 @@ sitemap: false
     * <https://jekyllrb.com/docs/liquid/filters/>
 * GitHub
     * <https://github.com/github/linguist/blob/master/lib/linguist/languages.yml>
+    * <https://github.com/18F/open-source-guide/blob/18f-pages/pages/making-readmes-readable.md>
+    * <https://gist.github.com/PurpleBooth/109311bb0361f32d87a2>
 * NSIS
     * <https://stackoverflow.com/questions/10581570/setting-the-uac-publisher-field-for-a-nsis-installer>
-	* <https://docs.microsoft.com/en-us/windows/desktop/seccrypto/makecert>
-	* <https://docs.microsoft.com/en-us/previous-versions/bb756995(v=msdn.10)>
+    * <https://docs.microsoft.com/en-us/windows/desktop/seccrypto/makecert>
+    * <https://docs.microsoft.com/en-us/previous-versions/bb756995(v=msdn.10)>
+    * <https://nsis.sourceforge.io/Detect_Drives>
+    * <https://nsis.sourceforge.io/GetDrives>
+    * <https://nsis.sourceforge.io/Adding_DropList_with_available_drives_instead_of_directory_page>
+    * <http://lasp.colorado.edu/cism/CISM_DX/code/CISM_DX-0.50/required_packages/octave-forge/admin/Windows/DetectDrives.nsi>
 
 ## Download link
 
@@ -34,8 +40,6 @@ sitemap: false
 ## Debug `releases` content
 
 {% assign releases = site.github.releases | where: "draft", false | sort: "tag_name" | reverse %}
-
-<!-- test 2 .appveyor.yml -->
 
 <!-- show releases -->
 ```JSON

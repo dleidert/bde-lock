@@ -15,7 +15,7 @@ Einfacher Installer, der im Laufwerks-Kontextmenü einen Eintrag erzeugt, um ein
 [url.license]: https://raw.githubusercontent.com/dleidert/bde-lock/master/LICENSE
 [url.appveyor]: https://ci.appveyor.com/project/dleidert/bde-lock
 [url.travisci]: https://travis-ci.org/dleidert/bde-lock
-[url.download]: https://github.com/dleidert/bdelock/releases/
+[url.download]: https://github.com/dleidert/bde-lock/releases/
 
   * [Über das Projekt](#über-das-projekt)
   * [Download](#download)

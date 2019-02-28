@@ -14,7 +14,7 @@ excerpt_separator: <!-- excerpt -->
 
 exclude:
   - README.md
-  - "*/README.md"
+  - "**/README.md"
 
 header_pages:
   - index.md

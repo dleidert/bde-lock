@@ -1,3 +1,4 @@
 bdelock-*-setup.exe
 bdelock-setup.exe
 ignore.*
+script/git*.sh

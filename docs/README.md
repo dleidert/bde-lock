@@ -15,7 +15,7 @@ Simple installer to create a drive context menu function to lock an unlocked bit
 [url.license]: https://raw.githubusercontent.com/dleidert/bde-lock/master/LICENSE
 [url.appveyor]: https://ci.appveyor.com/project/dleidert/bde-lock
 [url.travisci]: https://travis-ci.org/dleidert/bde-lock
-[url.download]: https://github.com/dleidert/bdelock/releases/
+[url.download]: https://github.com/dleidert/bde-lock/releases/
 
   * [About the project](#about-the-project)
   * [Download](#download)

@@ -21,8 +21,10 @@
     {
       "@type": "Language",
       "name": "Deutsch",
-      "alternateName": "German",
-      "alternateName": "de"
+      "alternateName": [
+        "German",
+        "de"
+      ]
     }
   ],
   "operatingSystem": [

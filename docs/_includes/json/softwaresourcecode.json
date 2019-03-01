@@ -1,0 +1,14 @@
+{%- assign release = site.github.latest_release -%}
+{
+  "@context": "http://schema.org/",
+  "@type": "SoftwareSourceCode",
+  "codeRepository": "{{ repository_url }}",
+  "programmingLanguage": {
+    "@type": "ComputerLanguage",
+    "name": "{{ site.github.language }}",
+    "alternateName": "Nullsoft Scriptable Install System",
+    "url": "https://nsis.sourceforge.io/"
+  },
+  "targetProduct": {%- include json/softwareapplication -%},
+  "creator": {%- include json/person.json -%}
+}

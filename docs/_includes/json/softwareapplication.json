@@ -2,15 +2,29 @@
 {
   "@context": "http://schema.org/",
   "@type": "SoftwareApplication",
-  "name": "bde-lock",
+  "name": "{{ site.github.project_title | default: site.github.repository_name }}",
   "softwareVersion": "{{ release.tag_name | strip | remove: 'v' }}",
   "alternateName": [
     "bdelock",
     "{{ release.name }}"
   ],
-  "description": "simple Windows installer to create a drive context menu entry to lock an unlocked BitLocker encrypted drive",
+  "description": "Simple Windows installer to {{ site.github.project_tagline }}",
   "applicationCategory": "System",
-  "inLanguage": ["en", "de"],
+  "inLanguage": [
+    "en",
+    "de",
+    {
+      "@type": "Language",
+      "name": "English",
+      "alternateName": "en"
+    },
+    {
+      "@type": "Language",
+      "name": "Deutsch",
+      "alternateName": "German",
+      "alternateName": "de"
+    }
+  ],
   "operatingSystem": [
     "Windows",
     "Windows Vista",

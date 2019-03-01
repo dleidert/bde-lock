@@ -2,10 +2,10 @@
 {
   "@context": "http://schema.org/",  
   "@type": "Person",
-  "name": "{{ site.author }}",
-  "email": "mailto:{{ site.email }}",
+  "name": "{{ site.author | default: site.github.owner.name }}",
+  "email": "mailto:{{ site.email | default: site.github.owner.email }}",
   "nationality": "German",
-  "url": "http://www.wgdd.de",
+  "url": "{{ site.github.owner.blog }}",
   "sameAs": [
     "https://qa.debian.org/developer.php?login={{ site.debian_username | default: social.debian | cgi_escape | escape }}@debian.org",
     "https://salsa.debian.org/{{ site.debian_username | default: social.debian | cgi_escape | escape }}",

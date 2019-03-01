@@ -2,6 +2,9 @@
 layout: page
 title: Debug page
 sitemap: false
+extra_json:
+  - softwareapplication.json
+  - softwaresourcecode.json
 ---
 
 ## Useful links

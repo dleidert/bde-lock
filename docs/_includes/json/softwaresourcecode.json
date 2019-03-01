@@ -9,6 +9,6 @@
     "alternateName": "Nullsoft Scriptable Install System",
     "url": "https://nsis.sourceforge.io/"
   },
-  "targetProduct": {%- include json/softwareapplication -%},
+  "targetProduct": {%- include json/softwareapplication.json -%},
   "creator": {%- include json/person.json -%}
 }

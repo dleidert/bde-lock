@@ -35,6 +35,7 @@
     "Windows 8.1",
     "Windows 10"
   ],
+  "permissions": "requires elevated (administrative) permissions for installation and use",
   "downloadUrl": "{{ release.assets[0].browser_download_url }}",
   "fileSize": "{{ release.assets[0].size | divided_by: 1024 }}",
   "releaseNotes": [
@@ -43,8 +44,9 @@
   ],
   "license": "{{ site.github.license.url | default: https://raw.githubusercontent.com/dleidert/bde-lock/master/LICENSE }}",
   "url": "{{ site.github.repository_url }}",
-  "datePublished": "{{ release.published_at }}",
-  "dateCreated": "{{ release.created_at }}",
+  "datePublished": "{{ release.published_at | date_to_xmlschema }}",
+  "dateCreated": "{{ release.created_at | date_to_xmlschema }}",
+  "sdDatePublished": "{{ site.time | date_to_xmlschema }}",
   "author": {%- include json/person.json -%},
   "publisher": {%- include json/person.json -%}
 }

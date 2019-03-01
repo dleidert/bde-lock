@@ -18,6 +18,7 @@ exclude:
 
 header_pages:
   - index.md
+  - source.md
   - posts.md
   - changelog.md
   - translation.md

@@ -3,6 +3,7 @@ layout: page
 title: Debug page
 sitemap: false
 extra_json:
+  - softwaresourcecode.json
   - softwareapplication.json
   - softwaresourcecode.json
 ---

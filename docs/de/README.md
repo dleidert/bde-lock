@@ -7,6 +7,7 @@ Einfacher Installer, der im Laufwerks-Kontextmenü einen Eintrag erzeugt, um ein
 [![Aktuelle bde-lock Version](https://img.shields.io/github/release/dleidert/bde-lock.svg)][url.release]
 [![bde-lock Veröffentlichungsdatum](https://img.shields.io/github/release-date/dleidert/bde-lock.svg)][url.release]
 [![bde-lock Lizenzinformation](https://img.shields.io/github/license/dleidert/bde-lock.svg)][url.license]
+![GitHub meistgenutzte Top-Programmiersprache für bde-lock](https://img.shields.io/github/languages/top/dleidert/bde-lock.svg)
 [![Baustatus auf appveyor.com](https://img.shields.io/appveyor/ci/dleidert/bde-lock/master.svg)][url.appveyor]
 [![Baustatus auf travis-ci.org](https://img.shields.io/travis/dleidert/bde-lock/master.svg)][url.travisci]
 [![Downloadzähler für github.com](https://img.shields.io/github/downloads/dleidert/bde-lock/total.svg)][url.download]

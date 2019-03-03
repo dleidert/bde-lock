@@ -7,6 +7,7 @@ Simple installer to create a drive context menu function to lock an unlocked bit
 [![current bde-lock version](https://img.shields.io/github/release/dleidert/bde-lock.svg)][url.release]
 [![current bde-lock release date](https://img.shields.io/github/release-date/dleidert/bde-lock.svg)][url.release]
 [![bde-lock project license](https://img.shields.io/github/license/dleidert/bde-lock.svg)][url.license]
+![GitHub top language for bde-lock](https://img.shields.io/github/languages/top/dleidert/bde-lock.svg)
 [![build status on appveyor.com](https://img.shields.io/appveyor/ci/dleidert/bde-lock/master.svg)][url.appveyor]
 [![build status on travis-ci.org](https://img.shields.io/travis/dleidert/bde-lock/master.svg)][url.travisci]
 [![download count on github.com](https://img.shields.io/github/downloads/dleidert/bde-lock/total.svg)][url.download]

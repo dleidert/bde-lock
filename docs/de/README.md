@@ -4,39 +4,33 @@
 
 Einfacher Installer, der im Laufwerks-Kontextmenü einen Eintrag erzeugt, um ein unter Windows mit Bitlocker geschütztes entsperrtes Laufwerk zu sperren
 
-[![Aktuelle bde-lock Version](https://img.shields.io/github/release/dleidert/bde-lock.svg)][url.release]
-[![bde-lock Veröffentlichungsdatum](https://img.shields.io/github/release-date/dleidert/bde-lock.svg)][url.release]
-[![bde-lock Lizenzinformation](https://img.shields.io/github/license/dleidert/bde-lock.svg)][url.license]
+[![Aktuelle bde-lock Version](https://img.shields.io/github/release/dleidert/bde-lock.svg)](https://github.com/dleidert/bde-lock/releases/latest/)
+[![bde-lock Veröffentlichungsdatum](https://img.shields.io/github/release-date/dleidert/bde-lock.svg)](https://github.com/dleidert/bde-lock/releases/latest/)
+[![bde-lock Lizenzinformation](https://img.shields.io/github/license/dleidert/bde-lock.svg)](https://raw.githubusercontent.com/dleidert/bde-lock/master/LICENSE)
 ![GitHub meistgenutzte Top-Programmiersprache für bde-lock](https://img.shields.io/github/languages/top/dleidert/bde-lock.svg)
-[![Baustatus auf appveyor.com](https://img.shields.io/appveyor/ci/dleidert/bde-lock/master.svg)][url.appveyor]
-[![Baustatus auf travis-ci.org](https://img.shields.io/travis/dleidert/bde-lock/master.svg)][url.travisci]
-[![Downloadzähler für github.com](https://img.shields.io/github/downloads/dleidert/bde-lock/total.svg)][url.download]
+[![Baustatus auf appveyor.com](https://img.shields.io/appveyor/ci/dleidert/bde-lock/master.svg)](https://ci.appveyor.com/project/dleidert/bde-lock)
+[![Baustatus auf travis-ci.org](https://img.shields.io/travis/dleidert/bde-lock/master.svg)](https://travis-ci.org/dleidert/bde-lock)
+[![Downloadzähler für github.com](https://img.shields.io/github/downloads/dleidert/bde-lock/total.svg)](https://github.com/dleidert/bde-lock/releases/)
 
-[url.release]: https://github.com/dleidert/bde-lock/releases/latest/
-[url.license]: https://raw.githubusercontent.com/dleidert/bde-lock/master/LICENSE
-[url.appveyor]: https://ci.appveyor.com/project/dleidert/bde-lock
-[url.travisci]: https://travis-ci.org/dleidert/bde-lock
-[url.download]: https://github.com/dleidert/bde-lock/releases/
-
-  * [Über das Projekt](#über-das-projekt)
-  * [Getting started](#getting-started)
-    * [Download](#download)
-    * [Installation](#installation)
-    * [Uninstallation](#uninstallation)
-  * [Getting involved](#getting-involved)
-    * [Getting the source](#getting-the-source)
-    * [Build the installer](#build-the-installer)
-    * [Contribute](#contribute)
-  * [License](#license)
-  * [Credits](#credits)
+- [Über das Projekt](#about-the-project)
+- [Erste Schritte](#getting-started)
+    - [Download](#download)
+    - [Installation](#installation)
+    - [Uninstallation](#uninstallation)
+- [Mitmachen](#getting-involved)
+    - [Quellen besorgen](#getting-the-source)
+    - [Installer bauen](#build-the-installer)
+    - [Beitragen](#contribute)
+- [Lizenz](#license)
+- [Danksagung](#credits)
 
 ## Über das Projekt
 
-Der Installer kopiert ein [Skript](/script/bdelock.vbs) in das Programm-Verzeichnis und erstellt den Registry-Schlüssel `HKCR/Drive/shell/lock-bde` (inklusive Unterschlüssel). Letzterer ist notwendig, um den Eintrag im Kontextmenü zu erzeugen, das bei einem Rechtsklick auf das entsperrte Laufwerk erscheint. Um das Laufwerk zu sperren, wird das Windows-Programm [`manage-bde.exe`](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/manage-bde) mit erhöhten Rechten und dem Laufwerksbuchstaben aufgerufen. Um das zu erreichen, ist ein [(kleines) Skript](/script/bdelock.vbs) notwendig, dass einerseits den Backslash vom Laufwerkspfad entfernt (Beipiel: aus D:\ wird D:) und andererseits die Administratorrechte anfordert.
+Der Installer erstellt einen Eintrag im Laufwerks-Kontextmenü, um ein mit BitLocker geschütztes Laufwerk wieder zu sperren, ohne das System neu zu sterten. Während der Installation kopiert er ein [Skript](/script/bdelock.vbs) in das Windows Programm-Verzeichnis und erstellt den Registry-Schlüssel  `HKCR/Drive/shell/lock-bde` (inklusive Unterschlüssel). Letzterer ist notwendig, um den Eintrag im Kontextmenü zu erzeugen, das bei einem Rechtsklick auf das entsperrte Laufwerk erscheint. Um das Laufwerk zu sperren, wird das Windows-Programm [`manage-bde.exe`](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/manage-bde) mit erhöhten Rechten und dem Laufwerksbuchstaben aufgerufen. Um das zu erreichen, ist ein (kleines) [(short) script](/script/bdelock.vbs) notwendig, dass einerseits den Backslash vom Laufwerkspfad entfernt (Beipiel: aus D:\ wird D:) und andererseits die Administratorrechte anfordert.
 
-Der Installer beherrscht mehrere Sprachen. Momentan werden Deutsch und Englisch unterstützt. Weitere Sprachen hinzuzufügen, ist sehr einfach. Hierzu muss lediglich die Datei [`en.nsh`](/locale/en.nsh) kopiert, umbenannt, in einem Texteditor geöffnet, die einzelnen Passagen übersetzt und an mich [gemailt](https://github.com/dleidert/bde-lock/issues/new) werden.
+Der Installer beherrscht mehrere Sprachen. Momentan werden Deutsch und Englisch unterstützt. Weitere Sprachen hinzuzufügen, ist sehr einfach. Hierzu muss lediglich die Datei [`en.nsh`](/locale/en.nsh) kopiert, umbenannt, in einem Texteditor geöffnet, die einzelnen Passagen übersetzt und an mich [gesandt](https://github.com/dleidert/bde-lock/issues/new)t werden.
 
-## Getting started
+## Erste Schritte
 
 These instructions will get you a [copy of the installer](#download) and contain [installation](#installation), [usage](#usage) and [uninstalling](#uninstallation) notes.
 
@@ -104,8 +98,10 @@ Ein spezieller Dank geht an Shawn Brink, der [dieses Howto inklusive eines Skrip
 <details>
   <summary>Mehr ...</summary>
 Es gibt viele weitere Blog- und Foreneinträge, die sich mit dem Thema beschäftigen. Die populärsten sind vermutlich
-
-
-* <https://social.technet.microsoft.com/Forums/windows/en-US/41607938-7452-440d-8253-67fe8657bc0f/how-to-relock-a-drive-with-bitlocker?forum=w7itprosecurity>
-* <https://answers.microsoft.com/en-us/windows/forum/windows_7-performance/hot-to-lock-the-bitlocker-encrypted-drive-without/6ae82827-38ee-46dc-93d2-f5d2888324c2>
 </details>
+
+- [https://social.technet.microsoft.com/Forums/windows/en-US/41607938-7452-440d-8253-67fe8657bc0f/how-to-relock-a-drive-with-bitlocker?forum=w7itprosecurity](https://social.technet.microsoft.com/Forums/windows/en-US/41607938-7452-440d-8253-67fe8657bc0f/how-to-relock-a-drive-with-bitlocker?forum=w7itprosecurity)
+- [https://answers.microsoft.com/en-us/windows/forum/windows_7-performance/hot-to-lock-the-bitlocker-encrypted-drive-without/6ae82827-38ee-46dc-93d2-f5d2888324c2](https://answers.microsoft.com/en-us/windows/forum/windows_7-performance/hot-to-lock-the-bitlocker-encrypted-drive-without/6ae82827-38ee-46dc-93d2-f5d2888324c2)
+
+
+

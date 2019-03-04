@@ -58,11 +58,9 @@ In Windows `Systemsteuerung > Programme > Programme deinstallieren` aufrufen. Do
 
 ## Getting involved
 
+These instructions are useful, if you plan to [download the source](#getting-the-source), [build the installer](#build-the-installer) yourself or [contribute](#contribute) to the project.
+
 Der [komplette Quellcode](https://github.com/dleidert/bde-lock/tree/master) setzt sich aus Textdateien zusammen und ist menschenlesbar. Er besteht aus der [NSIS Installer-Skriptdatei](/bdelock.nsi) inklusive der [Übersetzungen](https://github.com/dleidert/bde-lock/tree/master/locale), Dokumentation und dem [Mantelskript für `manage-bde.exe`](/script/bdelock.vbs).
-
-Der Installer kann einfach selbst erstellt werden. Dafür wird lediglich das aktuelle [Nullsoft Scriptable Install System (NSIS)](https://sourceforge.net/projects/nsis/files/latest/download) benötigt, mit dem die Datei [`bdelock.nsi`](/bdelock.nsi) kompiliert wird.
-
-Selbst ohne genaue Kenntnis von NSIS- oder VBcript-Syntax sind die Quelldateien und was sie tun, gut zu verstehen.
 
 ### Getting the source
 
@@ -76,7 +74,7 @@ The most recent source can further be obtained as [tarball](https://github.com/d
 
 ### Build the installer
 
-Install [NSIS](https://nsis.sourceforge.io/) on Windows. Then either set `makensis.exe` to be the default application to open `.nsi` files, or open the graphical user interface and load [`bdelock.nsi`](/bdelock.nsi) or execute the following command:
+Der Installer kann einfach selbst erstellt werden. Dafür wird lediglich das aktuelle [Nullsoft Scriptable Install System (NSIS)](https://sourceforge.net/projects/nsis/files/latest/download) benötigt, mit dem die Datei [`bdelock.nsi`](/bdelock.nsi) kompiliert wird.
 
 ```Shell
 makensis.exe /V3 bdelock.nsi

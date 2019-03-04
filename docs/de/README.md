@@ -56,7 +56,7 @@ These instructions are useful, if you plan to [download the source](#getting-the
 
 Der [komplette Quellcode](https://github.com/dleidert/bde-lock/tree/master) setzt sich aus Textdateien zusammen und ist menschenlesbar. Er besteht aus der [NSIS Installer-Skriptdatei](/bdelock.nsi) inklusive der [Übersetzungen](https://github.com/dleidert/bde-lock/tree/master/locale), Dokumentation und dem [Mantelskript für `manage-bde.exe`](/script/bdelock.vbs).
 
-### Getting the source
+### Quellcode
 
 The easiest way is to clone the repository from
 

@@ -17,6 +17,7 @@ before_install:
     fi
 
 matrix:
+  fast_finish: true
   allow_failures:
   - os: windows
   include:

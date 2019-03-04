@@ -18,8 +18,6 @@ before_install:
 
 matrix:
   fast_finish: true
-  allow_failures:
-  - os: windows
   include:
   - os: linux
     dist: xenial

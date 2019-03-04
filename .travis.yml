@@ -19,7 +19,7 @@ before_install:
 matrix:
   fast_finish: true
   include:
-  - os: linux
+  - os: linux # Linux
     dist: xenial
     addons:
       apt:
@@ -27,7 +27,7 @@ matrix:
         packages: nsis
     install: true
     script: makensis -V3 bdelock.nsi
-  - os: windows
+  - os: windows # Windows
     filter_secrets: false
     env: PATH="/c/Program Files (x86)/NSIS/:/c/Program Files/NSIS/:$PATH"
     install: choco install nsis -y

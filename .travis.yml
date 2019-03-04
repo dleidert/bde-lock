@@ -31,5 +31,6 @@ matrix:
     script: makensis -V3 bdelock.nsi
   - os: windows
     filter_secrets: false
+    env: PATH="/c/Program Files (x86)/NSIS/:/c/Program Files/NSIS/:$PATH"
     install: choco install nsis -y
-    script: makensis.exe /V3 bdelock.nsi
+    script: makensis -V3 bdelock.nsi

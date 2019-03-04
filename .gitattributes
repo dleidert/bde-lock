@@ -1,4 +1,10 @@
+*.json linguist-detectable=true
+*.md   linguist-detectable=true
+*.yml  linguist-detectable=true
+*.txt  linguist-detectable=true
+
 /docs export-ignore
+Gemfile export-ignore
 .appveyor.yml export-ignore
 .gitattributes export-ignore
 .gitignore export-ignore
